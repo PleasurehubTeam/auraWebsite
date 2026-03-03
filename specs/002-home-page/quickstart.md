@@ -7,7 +7,7 @@
 
 - `001-global-shared-modules` 已实现（Header、Footer、Download CTA、AgeGate、CookieBanner 可用）
 - 开发服务器已启动: `pnpm dev`
-- 图片素材已存放在 `/images/01Home/` 目录下
+- 图片素材已存放在 `/images/home/` 目录下
 
 ## 验证步骤
 

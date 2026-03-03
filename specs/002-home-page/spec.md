@@ -178,36 +178,36 @@
 
 ## 素材清单
 
-图片素材目录: `/images/01Home/`
+图片素材目录: `/images/home/`
 
-| 文件名                    | 格式 | 对应模块       | 说明                    |
-| ------------------------- | ---- | -------------- | ----------------------- |
-| Aura_Logo.svg             | SVG  | Hero / 通用    | 品牌 Logo               |
-| Aura_index_banner01a.webp | WebP | Hero 女性版    | 首屏背景/人物图 a       |
-| Aura_index_banner01a.png  | PNG  | Hero 女性版    | 同上（PNG 备用）        |
-| Aura_index_banner01b.webp | WebP | Hero 女性版    | 首屏背景/人物图 b       |
-| Aura_index_banner02.png   | PNG  | Hero 男性版    | 首屏背景/产品图         |
-| Aura_index_banner02a.webp | WebP | AI-Powered     | AI Customization 场景图 |
-| Aura_index_banner02b.webp | WebP | AI-Powered     | Multimodal Chat 场景图  |
-| Aura_index_banner02c.webp | WebP | Solo Play      | 场景图 c                |
-| Aura_index_banner02d.webp | WebP | Solo Play      | 场景图 d                |
-| Aura_index_banner03.webp  | WebP | Classic Mode   | 经典模式 App 界面       |
-| Aura_index_banner03a.png  | PNG  | Solo Play      | Slide Model 场景图      |
-| Aura_index_banner03b.png  | PNG  | Solo Play      | Voice Control 场景图    |
-| Aura_index_banner03c.png  | PNG  | Solo Play      | Video Sync 场景图       |
-| Aura_index_banner03d.png  | PNG  | Solo Play      | Music Sync 场景图       |
-| Aura_index_banner04.png   | PNG  | 剧本杀         | 剧本角色卡片素材        |
-| Aura_index_product01.png  | PNG  | Hero 女性版    | 产品硬件渲染图          |
-| Aura_index_product02.png  | PNG  | Hero 男性版    | 产品硬件渲染图          |
-| Aura_index_icon.png       | PNG  | Mode Function  | 模式图标素材            |
-| Aura_index_icon01.svg     | SVG  | Classic Mode   | 功能图标                |
-| Aura_index_icon02.png     | PNG  | Remote Control | 远程控制场景图          |
-| Aura_index_icon_01.png    | PNG  | Mode Function  | 模式图标 01             |
-| Aura_index_icon_02.png    | PNG  | Mode Function  | 模式图标 02             |
-| Aura_index_Icon07.svg     | SVG  | Classic Mode   | 功能图标 07             |
-| Aura_index_Icon08.svg     | SVG  | Classic Mode   | 功能图标 08             |
-| Aura_index_Icon09.svg     | SVG  | Classic Mode   | 功能图标 09             |
-| Aura_index_Icon10.svg     | SVG  | Classic Mode   | 功能图标 10             |
+| 文件名                     | 格式 | 对应模块       | 说明                    |
+| -------------------------- | ---- | -------------- | ----------------------- |
+| aura-logo.svg              | SVG  | Hero / 通用    | 品牌 Logo               |
+| aura-index-banner-01a.webp | WebP | Hero 女性版    | 首屏背景/人物图 a       |
+| aura-index-banner-01a.png  | PNG  | Hero 女性版    | 同上（PNG 备用）        |
+| aura-index-banner-01b.webp | WebP | Hero 女性版    | 首屏背景/人物图 b       |
+| aura-index-banner-02.png   | PNG  | Hero 男性版    | 首屏背景/产品图         |
+| aura-index-banner-02a.webp | WebP | AI-Powered     | AI Customization 场景图 |
+| aura-index-banner-02b.webp | WebP | AI-Powered     | Multimodal Chat 场景图  |
+| aura-index-banner-02c.webp | WebP | Solo Play      | 场景图 c                |
+| aura-index-banner-02d.webp | WebP | Solo Play      | 场景图 d                |
+| aura-index-banner-03.webp  | WebP | Classic Mode   | 经典模式 App 界面       |
+| aura-index-banner-03a.png  | PNG  | Solo Play      | Slide Model 场景图      |
+| aura-index-banner-03b.png  | PNG  | Solo Play      | Voice Control 场景图    |
+| aura-index-banner-03c.png  | PNG  | Solo Play      | Video Sync 场景图       |
+| aura-index-banner-03d.png  | PNG  | Solo Play      | Music Sync 场景图       |
+| aura-index-banner-04.png   | PNG  | 剧本杀         | 剧本角色卡片素材        |
+| aura-index-product-01.png  | PNG  | Hero 女性版    | 产品硬件渲染图          |
+| aura-index-product-02.png  | PNG  | Hero 男性版    | 产品硬件渲染图          |
+| aura-index-icon.png        | PNG  | Mode Function  | 模式图标素材            |
+| aura-index-icon-01.svg     | SVG  | Classic Mode   | 功能图标                |
+| aura-index-icon-02.png     | PNG  | Remote Control | 远程控制场景图          |
+| aura-index-icon-01.png     | PNG  | Mode Function  | 模式图标 01             |
+| aura-index-icon-02.png     | PNG  | Mode Function  | 模式图标 02             |
+| aura-index-icon-07.svg     | SVG  | Classic Mode   | 功能图标 07             |
+| aura-index-icon-08.svg     | SVG  | Classic Mode   | 功能图标 08             |
+| aura-index-icon-09.svg     | SVG  | Classic Mode   | 功能图标 09             |
+| aura-index-icon-10.svg     | SVG  | Classic Mode   | 功能图标 10             |
 
 ## 成功标准 _(必填)_
 
@@ -230,7 +230,7 @@
 
 - Hero 区域的两版内容（女性版/男性版）通过自动轮播实现，不做基于用户来源的动态 A/B 分流（后续迭代可增加）
 - 首页底部的 Download CTA 区域和 Footer 由公共模块（001-global-shared-modules）提供，本功能不重复实现
-- 所有产品图片素材已存放在 `/images/01Home/` 目录下，开发时直接引用
+- 所有产品图片素材已存放在 `/images/home/` 目录下，开发时直接引用
 - Classic Mode 区域的功能图标网格为静态展示（不可交互），仅展示图标和标签
 - 标签切换（AI-Powered、Solo Play）使用客户端交互，无需请求服务端数据
 - 首页不包含视频播放功能（设计稿中无视频元素），所有展示内容为图片和文字

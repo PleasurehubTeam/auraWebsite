@@ -94,7 +94,7 @@
 
 **Rationale**:
 
-- 项目已有 Aura Logo SVG (`/images/01Home/Aura_Logo.svg`)
+- 项目已有 Aura Logo SVG (`/images/home/aura-logo.svg`)
 - 可基于现有 Logo 创建简化版本（如降低不透明度 + 灰色调），无需额外设计资源
 - 保持品牌一致性
 - SVG 格式体积小，不影响性能

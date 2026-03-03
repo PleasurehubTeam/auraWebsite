@@ -8,11 +8,11 @@
 
 表示首屏 Hero 区域无缝轮播中的单个手机截图。
 
-| Field | Type   | Required | Description                                 |
-| ----- | ------ | -------- | ------------------------------------------- |
-| id    | string | Yes      | 唯一标识符                                  |
-| image | string | Yes      | 手机 Mockup 图片路径（`/images/02App/...`） |
-| alt   | string | Yes      | 图片描述文字（SEO + a11y）                  |
+| Field | Type   | Required | Description                               |
+| ----- | ------ | -------- | ----------------------------------------- |
+| id    | string | Yes      | 唯一标识符                                |
+| image | string | Yes      | 手机 Mockup 图片路径（`/images/app/...`） |
+| alt   | string | Yes      | 图片描述文字（SEO + a11y）                |
 
 ### AppHeroData（首屏数据）
 

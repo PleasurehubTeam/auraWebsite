@@ -57,7 +57,7 @@ interface NewsCategoryItem {
 - `slug`: 必须唯一，仅包含小写字母、数字和连字符，格式 `[a-z0-9-]+`，最大 80 字符
 - `title`: 非空，卡片上限制单行显示（CSS `text-overflow: ellipsis`）
 - `category`: 必须是 `NewsCategory` 枚举的有效值之一
-- `featuredImage`: 路径必须指向 `/public/images/03News/` 下的实际文件
+- `featuredImage`: 路径必须指向 `/public/images/news/` 下的实际文件
 - `publishDate`: 合法的 ISO 8601 日期字符串，用于排序（降序）
 - `cardSize`: 控制 CSS Grid 中的 `grid-row: span` 值（仅桌面和平板端生效）
 

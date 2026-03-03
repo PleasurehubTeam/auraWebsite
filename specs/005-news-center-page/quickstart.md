@@ -50,7 +50,7 @@ Visit `http://localhost:3000/news/[slug]` to view a news article detail page.
 
 ### Content Files
 
-- `public/images/03News/` — 新闻相关图片资源目录（已有 9 个图片文件）
+- `public/images/news/` — 新闻相关图片资源目录（已有 9 个图片文件）
 
 ## Architecture Pattern
 
@@ -94,8 +94,8 @@ config/news.ts → getAllNewsArticles() / getNewsArticleBySlug() → app/news/[s
 - Event: 3 篇
 - About Aura: 2 篇
 
-每篇文章使用 `public/images/03News/Aura_APP_News02-0X.webp` 图片。
-Hero Banner 使用 `public/images/03News/Aura_APP_News01.png`。
+每篇文章使用 `public/images/news/aura-app-news-02-0X.webp` 图片。
+Hero Banner 使用 `public/images/news/aura-app-news-01.png`。
 
 ## Verification
 

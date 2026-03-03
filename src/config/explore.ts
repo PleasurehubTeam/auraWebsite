@@ -5,7 +5,7 @@ export const explorePageData: ExplorePageData = {
     title: "Community Story",
     subtitle: "Connect, share, and explore in a space free from judgment",
     description: `Aura is committed to growing alongside its users, providing each user with more precise andpersonalized services, and continuously optimizing and upgrading itself based on user feed--back.With a user-centric approach, Aura expands its platform boundaries through communi-ty, exploring the infinite possibilities brought by technology, and bringing a more refined andenjoyable experience to people's lives.`,
-    backgroundImage: "/images/05Explore/Aura_Explore_Banner-01.webp",
+    backgroundImage: "/images/explore/aura-explore-banner-01.webp",
     backgroundAlt: "Aura community hero background with warm sunset silhouette",
     fallbackColor: "#1a1a2e",
   },
@@ -14,7 +14,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-01",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-01.webp",
+      featuredImage: "/images/explore/aura-explore-01.webp",
       imageAlt: "Aura community moment captured",
       cardSize: "large",
       order: 1,
@@ -22,7 +22,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-02",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-02.webp",
+      featuredImage: "/images/explore/aura-explore-02.webp",
       imageAlt: "Sharing life on Aura platform",
       cardSize: "small",
       order: 2,
@@ -30,7 +30,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-03",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-03.webp",
+      featuredImage: "/images/explore/aura-explore-03.webp",
       imageAlt: "Aura community connection",
       cardSize: "small",
       order: 3,
@@ -38,7 +38,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-04",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-04.webp",
+      featuredImage: "/images/explore/aura-explore-04.webp",
       imageAlt: "Aura lifestyle moment",
       cardSize: "large",
       order: 4,
@@ -46,7 +46,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-05",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-05.webp",
+      featuredImage: "/images/explore/aura-explore-05.webp",
       imageAlt: "Exploring together on Aura",
       cardSize: "small",
       order: 5,
@@ -54,7 +54,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-06",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-06.webp",
+      featuredImage: "/images/explore/aura-explore-06.webp",
       imageAlt: "Aura community adventure",
       cardSize: "small",
       order: 6,
@@ -62,7 +62,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-07",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-07.webp",
+      featuredImage: "/images/explore/aura-explore-07.webp",
       imageAlt: "Aura members sharing stories",
       cardSize: "small",
       order: 7,
@@ -70,7 +70,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-08",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-08.webp",
+      featuredImage: "/images/explore/aura-explore-08.webp",
       imageAlt: "Authentic Aura experience",
       cardSize: "large",
       order: 8,
@@ -78,7 +78,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-09",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-09.webp",
+      featuredImage: "/images/explore/aura-explore-09.webp",
       imageAlt: "Aura community gathering",
       cardSize: "small",
       order: 9,
@@ -86,7 +86,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-10",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-10.webp",
+      featuredImage: "/images/explore/aura-explore-10.webp",
       imageAlt: "Aura connection moment",
       cardSize: "small",
       order: 10,
@@ -94,7 +94,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-11",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-11.webp",
+      featuredImage: "/images/explore/aura-explore-11.webp",
       imageAlt: "Aura community celebration",
       cardSize: "large",
       order: 11,
@@ -102,7 +102,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-12",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-12.webp",
+      featuredImage: "/images/explore/aura-explore-12.webp",
       imageAlt: "Aura community discovery",
       cardSize: "small",
       order: 12,
@@ -110,7 +110,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-13",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-13.webp",
+      featuredImage: "/images/explore/aura-explore-13.webp",
       imageAlt: "Aura creative expression",
       cardSize: "small",
       order: 13,
@@ -118,7 +118,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-14",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-14.webp",
+      featuredImage: "/images/explore/aura-explore-14.webp",
       imageAlt: "Aura authentic living",
       cardSize: "large",
       order: 14,
@@ -126,7 +126,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-15",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-15.webp",
+      featuredImage: "/images/explore/aura-explore-15.webp",
       imageAlt: "Aura shared experiences",
       cardSize: "small",
       order: 15,
@@ -134,7 +134,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-16",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-16.webp",
+      featuredImage: "/images/explore/aura-explore-16.webp",
       imageAlt: "Aura everyday inspiration",
       cardSize: "small",
       order: 16,
@@ -142,7 +142,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-17",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-17.webp",
+      featuredImage: "/images/explore/aura-explore-17.webp",
       imageAlt: "Aura community vibes",
       cardSize: "large",
       order: 17,
@@ -150,7 +150,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-18",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-18.webp",
+      featuredImage: "/images/explore/aura-explore-18.webp",
       imageAlt: "Aura meaningful connections",
       cardSize: "small",
       order: 18,
@@ -158,7 +158,7 @@ export const explorePageData: ExplorePageData = {
     {
       id: "explore-19",
       title: "My Aura stories",
-      featuredImage: "/images/05Explore/Aura_Explore-19.webp",
+      featuredImage: "/images/explore/aura-explore-19.webp",
       imageAlt: "Aura life moments",
       cardSize: "small",
       order: 19,

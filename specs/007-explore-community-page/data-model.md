@@ -14,7 +14,7 @@ Hero 横幅区域的配置数据。
 | title           | string | ✅   | 标题文字，如 "Community Story"                                         |
 | subtitle        | string | ✅   | 副标题，如 "Connect, share, and explore in a space free from judgment" |
 | description     | string | ✅   | 介绍段落文字，描述 Aura 社区价值观                                     |
-| backgroundImage | string | ✅   | 背景图路径，如 "/images/05Explore/Aura_Explore_Banner-01.webp"         |
+| backgroundImage | string | ✅   | 背景图路径，如 "/images/explore/aura-explore-banner-01.webp"           |
 | backgroundAlt   | string | ✅   | 背景图替代文字                                                         |
 | fallbackColor   | string | ✅   | 图片加载前的兜底背景色                                                 |
 

@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     description:
       "Discover Aura, the AI-powered intelligent sensory technology that redefines intimacy.",
     type: "website",
-    images: ["/images/01Home/Aura_index_banner01a.webp"],
+    images: ["/images/home/aura-index-banner-01a.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aura — AI-Powered Intelligent Sensory Technology",
     description:
       "Discover Aura, the AI-powered intelligent sensory technology that redefines intimacy.",
-    images: ["/images/01Home/Aura_index_banner01a.webp"],
+    images: ["/images/home/aura-index-banner-01a.webp"],
   },
 };
 

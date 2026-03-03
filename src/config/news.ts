@@ -14,7 +14,7 @@ export const newsPageData: NewsPageData = {
   hero: {
     title: "Aura News Center",
     subtitle: "Stay up-to-date with Aura's latest news, events, and stories.",
-    backgroundImage: "/images/03News/Aura_APP_News01.png",
+    backgroundImage: "/images/news/aura-app-news-01.png",
     backgroundAlt: "Aura News Center hero background",
   },
   categories: [
@@ -23,7 +23,7 @@ export const newsPageData: NewsPageData = {
     { id: "about-aura", label: "About Aura", order: 3 },
   ] satisfies NewsCategoryItem[],
   emptyState: {
-    illustration: "/images/01Home/Aura_Logo.svg",
+    illustration: "/images/home/aura-logo.svg",
     message: "暂无相关新闻，请稍后再来查看",
     actionLabel: "查看全部新闻",
   },
@@ -36,7 +36,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-launches-next-gen-ai-companion",
     title: "Aura Launches Next-Gen AI Companion Device",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura next-generation AI companion device showcase",
     publishDate: "2026-02-25",
     summary:
@@ -53,7 +53,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-partnership-global-wellness-brands",
     title: "Aura Partners with Global Wellness Brands",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura partnership announcement with wellness brands",
     publishDate: "2026-02-20",
     summary:
@@ -69,7 +69,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-app-update-3-0-release",
     title: "Aura App 3.0: A Complete Redesign",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura App 3.0 redesigned user interface",
     publishDate: "2026-02-15",
     summary:
@@ -85,7 +85,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-wellness-expo-2026-highlights",
     title: "Highlights from Aura Wellness Expo 2026",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura Wellness Expo 2026 event highlights",
     publishDate: "2026-02-18",
     summary:
@@ -101,7 +101,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-community-meetup-series-2026",
     title: "Join the Aura Community Meetup Series",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura community meetup event series",
     publishDate: "2026-02-12",
     summary:
@@ -117,7 +117,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-design-awards-recognition",
     title: "Aura Receives International Design Awards",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura international design awards ceremony",
     publishDate: "2026-02-08",
     summary:
@@ -133,7 +133,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "my-aura-stories-user-testimonials",
     title: "My Aura Stories: Real User Testimonials",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-07.webp",
+    featuredImage: "/images/news/aura-app-news-02-07.webp",
     imageAlt: "Aura user stories and testimonials collection",
     publishDate: "2026-02-22",
     summary:
@@ -149,7 +149,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "behind-the-scenes-aura-rd-lab",
     title: "Behind the Scenes: Inside Aura's R&D Lab",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-08.webp",
+    featuredImage: "/images/news/aura-app-news-02-08.webp",
     imageAlt: "Inside Aura research and development laboratory",
     publishDate: "2026-02-05",
     summary:
@@ -168,7 +168,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-ai-engine-upgrade-v2",
     title: "Aura AI Engine Upgrade: Smarter Than Ever",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura AI engine upgrade announcement",
     publishDate: "2026-02-10",
     summary:
@@ -181,7 +181,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-expands-to-european-market",
     title: "Aura Expands to the European Market",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura European market expansion",
     publishDate: "2026-02-03",
     summary:
@@ -194,7 +194,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-sustainability-initiative-2026",
     title: "Aura Launches Sustainability Initiative",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura sustainability initiative announcement",
     publishDate: "2026-01-28",
     summary:
@@ -207,7 +207,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-firmware-update-march-2026",
     title: "Firmware Update: New Modes & Improvements",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura firmware update details",
     publishDate: "2026-01-22",
     summary:
@@ -220,7 +220,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-smart-home-integration",
     title: "Aura Now Integrates with Smart Home Systems",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura smart home integration showcase",
     publishDate: "2026-01-15",
     summary:
@@ -233,7 +233,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-tokyo-pop-up-experience",
     title: "Aura Pop-Up Experience Comes to Tokyo",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura Tokyo pop-up experience event",
     publishDate: "2026-02-06",
     summary:
@@ -246,7 +246,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-developer-hackathon-2026",
     title: "Aura Developer Hackathon: Build the Future",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura developer hackathon event",
     publishDate: "2026-01-30",
     summary:
@@ -259,7 +259,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-wellness-workshop-series",
     title: "Free Wellness Workshop Series by Aura",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-07.webp",
+    featuredImage: "/images/news/aura-app-news-02-07.webp",
     imageAlt: "Aura wellness workshop series",
     publishDate: "2026-01-25",
     summary:
@@ -272,7 +272,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-ces-2026-showcase",
     title: "Aura at CES 2026: Full Showcase Recap",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura CES 2026 showcase recap",
     publishDate: "2026-01-18",
     summary:
@@ -285,7 +285,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-charity-gala-evening",
     title: "Aura Charity Gala: An Evening of Giving",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-08.webp",
+    featuredImage: "/images/news/aura-app-news-02-08.webp",
     imageAlt: "Aura charity gala evening event",
     publishDate: "2026-01-10",
     summary:
@@ -298,7 +298,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-brand-philosophy-deep-dive",
     title: "The Philosophy Behind Aura's Design Language",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura design philosophy exploration",
     publishDate: "2026-02-01",
     summary:
@@ -311,7 +311,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-team-spotlight-ai-engineers",
     title: "Team Spotlight: Meet Our AI Engineers",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura AI engineering team spotlight",
     publishDate: "2026-01-26",
     summary:
@@ -324,7 +324,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-user-community-reaches-1-million",
     title: "Aura Community Reaches 1 Million Users",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura one million users celebration",
     publishDate: "2026-01-20",
     summary:
@@ -337,7 +337,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-materials-science-breakthrough",
     title: "Breakthrough in Aura's Materials Science Lab",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura materials science lab breakthrough",
     publishDate: "2026-01-14",
     summary:
@@ -350,7 +350,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-privacy-security-commitment",
     title: "Our Commitment to User Privacy & Security",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura privacy and security commitment",
     publishDate: "2026-01-08",
     summary:
@@ -363,7 +363,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-roadmap-2026-preview",
     title: "2026 Roadmap Preview: What's Coming Next",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura 2026 product roadmap preview",
     publishDate: "2026-01-02",
     summary:
@@ -376,7 +376,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-voice-control-feature",
     title: "Aura Introduces Voice Control Feature",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura voice control feature",
     publishDate: "2026-01-10",
     summary:
@@ -389,7 +389,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-limited-edition-spring-2026",
     title: "Limited Edition Spring 2026 Collection",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-07.webp",
+    featuredImage: "/images/news/aura-app-news-02-07.webp",
     imageAlt: "Aura limited edition spring collection",
     publishDate: "2026-01-05",
     summary:
@@ -402,7 +402,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-battery-tech-breakthrough",
     title: "Battery Technology Breakthrough at Aura",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-08.webp",
+    featuredImage: "/images/news/aura-app-news-02-08.webp",
     imageAlt: "Aura battery technology breakthrough",
     publishDate: "2025-12-28",
     summary:
@@ -415,7 +415,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-accessibility-update",
     title: "Aura Accessibility Update: Inclusive by Design",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura accessibility update",
     publishDate: "2025-12-20",
     summary:
@@ -428,7 +428,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-multi-device-sync",
     title: "Seamless Multi-Device Sync Now Available",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura multi-device sync feature",
     publishDate: "2025-12-15",
     summary:
@@ -441,7 +441,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-sleep-mode-innovation",
     title: "Aura Sleep Mode: Science-Backed Relaxation",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura sleep mode feature",
     publishDate: "2025-12-10",
     summary:
@@ -454,7 +454,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-shanghai-launch-event",
     title: "Aura Launch Event in Shanghai",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura Shanghai launch event",
     publishDate: "2026-01-05",
     summary:
@@ -467,7 +467,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-new-york-wellness-summit",
     title: "Aura at New York Wellness Summit 2026",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura New York wellness summit",
     publishDate: "2025-12-28",
     summary:
@@ -480,7 +480,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-creator-program-launch",
     title: "Aura Creator Program: Join Our Community",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura creator program launch",
     publishDate: "2025-12-22",
     summary:
@@ -493,7 +493,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-holiday-special-event",
     title: "Aura Holiday Special: Celebrate with Us",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura holiday special event",
     publishDate: "2025-12-18",
     summary:
@@ -506,7 +506,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-paris-design-week",
     title: "Aura Featured at Paris Design Week",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura Paris Design Week exhibition",
     publishDate: "2025-12-12",
     summary: "Aura showcases its award-winning design at Paris Design Week.",
@@ -518,7 +518,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-user-conference-2025",
     title: "Aura Annual User Conference Highlights",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-07.webp",
+    featuredImage: "/images/news/aura-app-news-02-07.webp",
     imageAlt: "Aura annual user conference",
     publishDate: "2025-12-05",
     summary:
@@ -531,7 +531,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-london-experience-center",
     title: "Aura Opens London Experience Center",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-08.webp",
+    featuredImage: "/images/news/aura-app-news-02-08.webp",
     imageAlt: "Aura London experience center opening",
     publishDate: "2025-11-28",
     summary:
@@ -544,7 +544,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-founding-story",
     title: "The Founding Story of Aura",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-08.webp",
+    featuredImage: "/images/news/aura-app-news-02-08.webp",
     imageAlt: "Aura founding story",
     publishDate: "2025-12-25",
     summary:
@@ -557,7 +557,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-quality-assurance-process",
     title: "Inside Aura's Quality Assurance Process",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura quality assurance process",
     publishDate: "2025-12-20",
     summary:
@@ -570,7 +570,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-global-team-culture",
     title: "Our Global Team: Culture & Values at Aura",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-07.webp",
+    featuredImage: "/images/news/aura-app-news-02-07.webp",
     imageAlt: "Aura global team culture",
     publishDate: "2025-12-15",
     summary: "A look at the diverse, passionate team that makes Aura possible.",
@@ -582,7 +582,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-customer-support-excellence",
     title: "Aura Customer Support: Always Here for You",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura customer support team",
     publishDate: "2025-12-10",
     summary:
@@ -595,7 +595,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-packaging-design-story",
     title: "The Art of Aura's Packaging Design",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura packaging design",
     publishDate: "2025-12-05",
     summary:
@@ -608,7 +608,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-color-science-research",
     title: "Color Science: How Aura Chooses Its Palette",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura color science research",
     publishDate: "2025-11-30",
     summary:
@@ -621,7 +621,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-partnership-universities",
     title: "Aura Partners with Top Universities for Research",
     category: "about-aura",
-    featuredImage: "/images/03News/Aura_APP_News02-01.webp",
+    featuredImage: "/images/news/aura-app-news-02-01.webp",
     imageAlt: "Aura university research partnerships",
     publishDate: "2025-11-25",
     summary:
@@ -634,7 +634,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-wearable-companion-teaser",
     title: "Teaser: Aura Wearable Companion Coming Soon",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura wearable companion teaser",
     publishDate: "2025-12-01",
     summary: "A sneak peek at Aura's upcoming wearable companion device.",
@@ -646,7 +646,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-cloud-sync-launch",
     title: "Aura Cloud Sync: Your Data, Everywhere",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-02.webp",
+    featuredImage: "/images/news/aura-app-news-02-02.webp",
     imageAlt: "Aura cloud sync launch",
     publishDate: "2025-11-25",
     summary:
@@ -659,7 +659,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-kids-mode-announcement",
     title: "Introducing Aura Kids Mode",
     category: "breaking-news",
-    featuredImage: "/images/03News/Aura_APP_News02-06.webp",
+    featuredImage: "/images/news/aura-app-news-02-06.webp",
     imageAlt: "Aura kids mode announcement",
     publishDate: "2025-11-20",
     summary:
@@ -672,7 +672,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-milan-expo-recap",
     title: "Aura at Milan Tech Expo: Full Recap",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-03.webp",
+    featuredImage: "/images/news/aura-app-news-02-03.webp",
     imageAlt: "Aura Milan tech expo recap",
     publishDate: "2025-11-20",
     summary:
@@ -685,7 +685,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-community-awards-2025",
     title: "Aura Community Awards: Celebrating Our Users",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-04.webp",
+    featuredImage: "/images/news/aura-app-news-02-04.webp",
     imageAlt: "Aura community awards ceremony",
     publishDate: "2025-11-15",
     summary:
@@ -698,7 +698,7 @@ export const newsArticles: NewsArticle[] = [
     slug: "aura-sensory-lab-open-day",
     title: "Aura Sensory Lab Open Day: Come Explore",
     category: "event",
-    featuredImage: "/images/03News/Aura_APP_News02-05.webp",
+    featuredImage: "/images/news/aura-app-news-02-05.webp",
     imageAlt: "Aura sensory lab open day",
     publishDate: "2025-11-10",
     summary:

@@ -124,8 +124,8 @@
 
 ### 关键实体
 
-- **GalleryItem（画廊项）**: 代表社区画廊中的一张照片 —— 包含图片源路径（格式 `/images/05Explore/Aura_Explore-{nn}.webp`）、替代文字、说明文字、展示尺寸（精选或标准）及可选的展示顺序，共 11 张
-- **HeroContent（Hero 内容）**: Hero 横幅配置 —— 包含标题文字、副标题、背景图路径（`/images/05Explore/Aura_Explore_Banner-01.webp`）和介绍段落文字
+- **GalleryItem（画廊项）**: 代表社区画廊中的一张照片 —— 包含图片源路径（格式 `/images/explore/aura-explore-{nn}.webp`）、替代文字、说明文字、展示尺寸（精选或标准）及可选的展示顺序，共 11 张
+- **HeroContent（Hero 内容）**: Hero 横幅配置 —— 包含标题文字、副标题、背景图路径（`/images/explore/aura-explore-banner-01.webp`）和介绍段落文字
 - **PageMetadata（页面元数据）**: Explore 页面的 SEO 和 Open Graph 元数据 —— 包含标题、描述和社交分享图
 
 ## 成功标准 _(必填)_
@@ -149,13 +149,13 @@
 - Q: 各组件动画效果明细？ → A: 复用现有动画模式（Hero 文字 ScrollReveal(up)、画廊卡片级联渐入 opacity+y delay 递增、预览 opacity+scale），但卡片悬停不放大图片，改为说明文字粉色高亮
 - Q: 画廊区域背景色方案？ → A: 白色背景 (bg-white)，照片和文字内容突出，风格清爽干净，与全站视觉风格统一
 - Q: Hero 横幅高度策略？ → A: 最小视口高度 min-h-[80vh]，与 About 页一致，Hero 区域更沉浸
-- Q: 画廊照片图片资源命名和路径？ → A: 使用 `public/images/05Explore/` 目录下已有的 `Aura_Explore-{nn}.webp` 格式图片（共 11 张画廊照片 Aura_Explore-01~11.webp + 1 张 Hero 背景 Aura_Explore_Banner-01.webp），无独立占位图，兜底使用 fallbackColor
+- Q: 画廊照片图片资源命名和路径？ → A: 使用 `public/images/explore/` 目录下已有的 `aura-explore-{nn}.webp` 格式图片（共 11 张画廊照片 aura-explore-01~11.webp + 1 张 Hero 背景 aura-explore-banner-01.webp），无独立占位图，兜底使用 fallbackColor
 
 ## 假设条件
 
 - 画廊照片为静态/精选内容，通过本地配置文件管理 —— MVP 阶段不需要实时 UGC 上传或后台审核系统
 - 全局共享的顶部导航栏和底部信息栏组件已在之前的功能（001-global- shared-modules）中实现，可直接复用
-- 图片资源存储在 `public/images/05Explore/` 目录下，命名格式为 `Aura_Explore-{nn}.webp`（画廊照片 01~11）和 `Aura_Explore_Banner-01.webp`（Hero 背景），均为 WebP 格式，已存在无需创建
+- 图片资源存储在 `public/images/explore/` 目录下，命名格式为 `aura-explore-{nn}.webp`（画廊照片 01~11）和 `aura-explore-banner-01.webp`（Hero 背景），均为 WebP 格式，已存在无需创建
 - 设计语言（配色方案、字体排版、间距）遵循其他页面已建立的 Aura 品牌体系：Montserrat 字体、brand-pink (#FF4D8D) 强调色、rounded-2xl 卡片圆角、白色画廊背景、深色 Hero 横幅
 - Hero 横幅背景为静态图片，非视频
 - 查看 Explore 页面不需要用户登录认证

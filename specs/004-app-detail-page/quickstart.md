@@ -66,8 +66,8 @@ pnpm build
 
 ## Image Assets
 
-所有素材位于 `public/images/02App/`：
+所有素材位于 `public/images/app/`：
 
-- `Aura_APP_banner01.png` ~ `Aura_APP_banner07.png`
+- `aura-app-banner-01.png` ~ `aura-app-banner-07.png`
 
 素材路径在 `src/config/app.ts` 中配置，组件通过 props 接收。

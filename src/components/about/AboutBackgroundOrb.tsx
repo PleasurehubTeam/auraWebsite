@@ -13,7 +13,7 @@ export function AboutBackgroundOrb() {
       aria-hidden="true"
     >
       <Image
-        src="/images/Aura_index_icon_03.png"
+        src="/images/aura-index-icon-03.png"
         alt=""
         width={800}
         height={800}

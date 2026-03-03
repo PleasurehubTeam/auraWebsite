@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { TabItem } from "@/types/home";
 import { useImagePreload } from "@/hooks/useImagePreload";
 
-const PLACEHOLDER_IMAGE = "/images/03News/news-placeholder.webp";
+const PLACEHOLDER_IMAGE = "/images/news/news-placeholder.webp";
 
 interface TabSwitcherProps {
   tabs: TabItem[];

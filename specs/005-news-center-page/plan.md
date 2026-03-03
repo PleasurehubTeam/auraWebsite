@@ -32,7 +32,7 @@ _GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 | III. SEO Optimization       | ✅ PASS | 列表页和详情页均使用 SSG（`generateStaticParams`）；每页独立 metadata + Open Graph；语义化 HTML（`<article>`、`<section>`、`<nav>`）；URL slug 人类可读、小写、连字符分隔 |
 | IV. Content Maintainability | ✅ PASS | 数据通过 React Hook 访问，底层来自 `config/news.ts` mock 数据；内容与展示完全分离；后期替换 API 只需修改 Hook 内部实现                                                    |
 | V. Technology Standards     | ✅ PASS | Tailwind CSS 样式；Framer Motion 动画（ScrollReveal + AnimatePresence）；TypeScript strict；pnpm 包管理                                                                   |
-| VI. Development Workflow    | ✅ PASS | 功能分支开发；组件遵循 PascalCase 一文件一组件；图片存放于 `public/images/03News/`                                                                                        |
+| VI. Development Workflow    | ✅ PASS | 功能分支开发；组件遵循 PascalCase 一文件一组件；图片存放于 `public/images/news/`                                                                                          |
 
 **Gate Result**: ✅ 全部通过，无违反项
 
@@ -82,16 +82,16 @@ src/
 │           └── page.tsx           # 新闻详情页（动态路由）
 public/
 └── images/
-    └── 03News/
-        ├── Aura_APP_News01.png    # Hero Banner 背景图
-        ├── Aura_APP_News02-01.webp  # 新闻卡片图片 1
-        ├── Aura_APP_News02-02.webp  # 新闻卡片图片 2
-        ├── Aura_APP_News02-03.webp  # 新闻卡片图片 3
-        ├── Aura_APP_News02-04.webp  # 新闻卡片图片 4
-        ├── Aura_APP_News02-05.webp  # 新闻卡片图片 5
-        ├── Aura_APP_News02-06.webp  # 新闻卡片图片 6
-        ├── Aura_APP_News02-07.webp  # 新闻卡片图片 7
-        └── Aura_APP_News02-08.webp  # 新闻卡片图片 8
+    └── news/
+        ├── aura-app-news-01.png    # Hero Banner 背景图
+        ├── aura-app-news-02-01.webp  # 新闻卡片图片 1
+        ├── aura-app-news-02-02.webp  # 新闻卡片图片 2
+        ├── aura-app-news-02-03.webp  # 新闻卡片图片 3
+        ├── aura-app-news-02-04.webp  # 新闻卡片图片 4
+        ├── aura-app-news-02-05.webp  # 新闻卡片图片 5
+        ├── aura-app-news-02-06.webp  # 新闻卡片图片 6
+        ├── aura-app-news-02-07.webp  # 新闻卡片图片 7
+        └── aura-app-news-02-08.webp  # 新闻卡片图片 8
 ```
 
 **Structure Decision**: 遵循项目已有的单体前端结构（`src/` 根目录）。新增 `hooks/` 目录下的数据访问 Hook，`components/news/` 目录下的新闻组件，以及 `app/news/` 下的页面文件。数据流模式与现有 `config → types → components → app` 一致，增加 `hooks` 层作为组件与配置之间的数据访问抽象。
@@ -220,6 +220,6 @@ app/news/page.tsx / app/news/[slug]/page.tsx (页面组装)
 | III. SEO Optimization       | ✅ PASS | 列表页 SSG + 详情页 `generateStaticParams` SSG；独立 metadata + OG 标签；语义化 `<article>`、`<section>`、`<nav>`；slug 格式 `/news/xxx-xxx` |
 | IV. Content Maintainability | ✅ PASS | React Hook 数据访问层完全隔离 UI 与数据源；mock 数据集中在 `config/news.ts`；替换 API 零组件改动                                             |
 | V. Technology Standards     | ✅ PASS | Tailwind 样式；Framer Motion 入场/过渡动画；TypeScript strict 类型安全；pnpm 锁文件                                                          |
-| VI. Development Workflow    | ✅ PASS | 功能分支 `005-news-center-page`；PascalCase 组件文件名；图片位于 `public/images/03News/`；ESLint + build 验证                                |
+| VI. Development Workflow    | ✅ PASS | 功能分支 `005-news-center-page`；PascalCase 组件文件名；图片位于 `public/images/news/`；ESLint + build 验证                                  |
 
 **Post-Design Gate Result**: ✅ 全部通过

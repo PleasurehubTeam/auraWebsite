@@ -26,11 +26,11 @@
 
 **素材映射**:
 
-| 字段            | 女性版 (female)           | 男性版 (male)            |
-| --------------- | ------------------------- | ------------------------ |
-| productImage    | Aura_index_product01.png  | Aura_index_product02.png |
-| backgroundImage | Aura_index_banner01a.webp | Aura_index_banner02.png  |
-| phoneScreenshot | Aura_index_banner01b.webp | （同背景图组合）         |
+| 字段            | 女性版 (female)            | 男性版 (male)             |
+| --------------- | -------------------------- | ------------------------- |
+| productImage    | aura-index-product-01.png  | aura-index-product-02.png |
+| backgroundImage | aura-index-banner-01a.webp | aura-index-banner-02.png  |
+| phoneScreenshot | aura-index-banner-01b.webp | （同背景图组合）          |
 
 ### TabItem（标签项）
 
@@ -64,19 +64,19 @@
 
 **素材映射（AI-Powered）**:
 
-| TabItem.id       | image                     |
-| ---------------- | ------------------------- |
-| ai-customization | Aura_index_banner02a.webp |
-| multimodal-chat  | Aura_index_banner02b.webp |
+| TabItem.id       | image                      |
+| ---------------- | -------------------------- |
+| ai-customization | aura-index-banner-02a.webp |
+| multimodal-chat  | aura-index-banner-02b.webp |
 
 **素材映射（Solo Play）**:
 
-| TabItem.id    | image                    |
-| ------------- | ------------------------ |
-| slide-model   | Aura_index_banner03a.png |
-| voice-control | Aura_index_banner03b.png |
-| video-sync    | Aura_index_banner03c.png |
-| music-sync    | Aura_index_banner03d.png |
+| TabItem.id    | image                     |
+| ------------- | ------------------------- |
+| slide-model   | aura-index-banner-03a.png |
+| voice-control | aura-index-banner-03b.png |
+| video-sync    | aura-index-banner-03c.png |
+| music-sync    | aura-index-banner-03d.png |
 
 ### ClassicModeData（经典模式模块数据）
 
@@ -106,13 +106,13 @@
 
 **素材映射**:
 
-| 图标        | 文件                  |
-| ----------- | --------------------- |
-| 功能图标 01 | Aura_index_icon01.svg |
-| 功能图标 07 | Aura_index_Icon07.svg |
-| 功能图标 08 | Aura_index_Icon08.svg |
-| 功能图标 09 | Aura_index_Icon09.svg |
-| 功能图标 10 | Aura_index_Icon10.svg |
+| 图标        | 文件                   |
+| ----------- | ---------------------- |
+| 功能图标 01 | aura-index-icon-01.svg |
+| 功能图标 07 | aura-index-icon-07.svg |
+| 功能图标 08 | aura-index-icon-08.svg |
+| 功能图标 09 | aura-index-icon-09.svg |
+| 功能图标 10 | aura-index-icon-10.svg |
 
 ### RemoteControlData（远程控制模块数据）
 
@@ -126,7 +126,7 @@
 
 **数据来源**: `src/config/home.ts` 静态常量对象
 
-**素材映射**: `Aura_index_icon02.png`
+**素材映射**: `aura-index-icon-02.png`
 
 ### CarouselCard（剧本杀轮播卡片）
 
@@ -141,7 +141,7 @@
 **数据来源**: `src/config/home.ts` 静态常量数组 `mysteryCards`
 **数量**: 至少 4 张卡片（规格边界条件要求）
 
-**素材映射**: `Aura_index_banner04.png`（包含多角色卡片素材，开发时按角色裁切或使用多张图片）
+**素材映射**: `aura-index-banner-04.png`（包含多角色卡片素材，开发时按角色裁切或使用多张图片）
 
 ### ModeItem（模式图标项）
 
@@ -160,9 +160,9 @@
 
 | 用途             | 文件                   |
 | ---------------- | ---------------------- |
-| 模式图标通用素材 | Aura_index_icon.png    |
-| 模式图标 01      | Aura_index_icon_01.png |
-| 模式图标 02      | Aura_index_icon_02.png |
+| 模式图标通用素材 | aura-index-icon.png    |
+| 模式图标 01      | aura-index-icon-01.png |
+| 模式图标 02      | aura-index-icon-02.png |
 
 ## 实体关系
 

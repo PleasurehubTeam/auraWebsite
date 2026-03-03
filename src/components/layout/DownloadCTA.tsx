@@ -33,7 +33,7 @@ export function DownloadCTA() {
           {/* 品牌图标 + 名称 */}
           <div className="mb-8 flex flex-col items-center gap-2">
             <Image
-              src="/images/01Home/Aura_index_icon.png"
+              src="/images/home/aura-index-icon.png"
               alt="Aura"
               width={120}
               height={120}

@@ -41,7 +41,7 @@ export function ClassicModeSection({ data }: ClassicModeSectionProps) {
             {/* 功能图片 */}
             <div className="relative aspect-[2/1] w-full overflow-hidden rounded-2xl">
               <Image
-                src="/images/01Home/Aura_index_icon_01.png"
+                src="/images/home/aura-index-icon-01.png"
                 alt="Aura features"
                 fill
                 className="object-contain"

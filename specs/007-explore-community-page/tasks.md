@@ -20,8 +20,8 @@
 **Purpose**: 创建 Explore 页面的类型定义、数据配置文件和图片资源目录
 
 - [x] T001 [P] 创建共享画廊类型文件 `src/types/gallery.ts`（定义 MasonryPhoto 公共基础接口）和 Explore 页面类型定义文件 `src/types/explore.ts`（定义 ExploreHeroData、ExploreGalleryPhoto extends MasonryPhoto（无 category 字段，有可选 order 字段）、ExplorePageData 类型）；MasonryPhoto 作为共享基础接口供 About 和 Explore 共同使用，参照 data-model.md 中的字段定义
-- [x] T002 [P] 创建 Explore 页面数据配置文件 `src/config/explore.ts`：包含 hero 数据（title: "Community Story"、subtitle、description、backgroundImage: "/images/05Explore/Aura_Explore_Banner-01.webp"、fallbackColor）、galleryPhotos 数组（11 张照片，路径格式 "/images/05Explore/Aura_Explore-{nn}.webp"，cardSize 区分 large/small，title 固定为 "My Aura stories"）、emptyState 配置，参照 `src/config/about.ts` 的结构模式
-- [x] T003 [P] 确认图片资源目录 `public/images/05Explore/` 已存在且包含所有所需图片：Hero 背景图（Aura_Explore_Banner-01.webp）和 11 张画廊照片（Aura_Explore-01.webp ~ Aura_Explore-11.webp），均为 WebP 格式，无需创建新文件
+- [x] T002 [P] 创建 Explore 页面数据配置文件 `src/config/explore.ts`：包含 hero 数据（title: "Community Story"、subtitle、description、backgroundImage: "/images/explore/aura-explore-banner-01.webp"、fallbackColor）、galleryPhotos 数组（11 张照片，路径格式 "/images/explore/aura-explore-{nn}.webp"，cardSize 区分 large/small，title 固定为 "My Aura stories"）、emptyState 配置，参照 `src/config/about.ts` 的结构模式
+- [x] T003 [P] 确认图片资源目录 `public/images/explore/` 已存在且包含所有所需图片：Hero 背景图（aura-explore-banner-01.webp）和 11 张画廊照片（aura-explore-01.webp ~ aura-explore-11.webp），均为 WebP 格式，无需创建新文件
 
 **Checkpoint**: 类型、配置和图片资源就绪，可开始组件开发
 
@@ -206,5 +206,5 @@ Developer/Agent B: T015, T016, T017 (US4 动画，三个任务也可并行)
 - [Story] 标签将任务映射到 spec.md 中的用户故事
 - 每个用户故事可独立完成和测试
 - Phase 2（公共组件抽离）是关键路径 — About 页重构验证必须通过后才能继续
-- 图片资源已存在于 `public/images/05Explore/`（T003 仅需确认），命名格式为 `Aura_Explore-{nn}.webp`
+- 图片资源已存在于 `public/images/explore/`（T003 仅需确认），命名格式为 `aura-explore-{nn}.webp`
 - 所有动画必须尊重 prefers-reduced-motion 系统设置

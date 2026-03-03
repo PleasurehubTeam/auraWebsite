@@ -47,9 +47,9 @@ pnpm dev
 
 ```bash
 # 图片目录（已存在，无需创建）
-public/images/05Explore/
-├── Aura_Explore_Banner-01.webp        # Hero 背景图
-└── Aura_Explore-01.webp ~ Aura_Explore-11.webp  # 画廊照片（11 张）
+public/images/explore/
+├── aura-explore-banner-01.webp        # Hero 背景图
+└── aura-explore-01.webp ~ aura-explore-11.webp  # 画廊照片（11 张）
 ```
 
 ## Verification

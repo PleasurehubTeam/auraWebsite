@@ -21,7 +21,7 @@ export function AppBottomCTA({ data }: AppBottomCTAProps) {
       />
       <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <Image
-          src="/images/01Home/Aura_index_icon.png"
+          src="/images/home/aura-index-icon.png"
           alt="Aura"
           width={80}
           height={80}

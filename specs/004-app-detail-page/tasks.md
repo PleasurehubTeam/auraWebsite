@@ -20,7 +20,7 @@
 **Purpose**: 创建 APP 详情页的类型定义和内容数据文件
 
 - [x] T001 [P] Define APP page TypeScript interfaces (MockupItem, AppHeroData, FeatureSectionData, AppBottomCTAData, AppPageData) in src/types/app.ts — follow data-model.md entity definitions, reference existing src/types/home.ts for style conventions
-- [x] T002 Create APP page content data with hero mockups (>=4 items from /images/02App/), 6 feature sections (title, description, images per research.md R-003 mapping), sectionTitle "About Aura APP", and bottomCTA data in src/config/app.ts — import types from src/types/app.ts, follow src/config/home.ts patterns for structure
+- [x] T002 Create APP page content data with hero mockups (>=4 items from /images/app/), 6 feature sections (title, description, images per research.md R-003 mapping), sectionTitle "About Aura APP", and bottomCTA data in src/config/app.ts — import types from src/types/app.ts, follow src/config/home.ts patterns for structure
 
 **Checkpoint**: Types and content data ready — component implementation can begin
 

@@ -39,11 +39,11 @@
 
 ## R-003: APP 页面图片素材映射
 
-**Decision**: 使用 `public/images/02App/` 下的 7 张现有素材，按设计稿对应关系映射到各区域
+**Decision**: 使用 `public/images/app/` 下的 7 张现有素材，按设计稿对应关系映射到各区域
 
 **Rationale**:
 
-- `02App/` 目录已有 `Aura_APP_banner01.png` 到 `Aura_APP_banner07.png`
+- `app/` 目录已有 `aura-app-banner-01.png` 到 `aura-app-banner-07.png`
 - 根据设计稿 Web Design-03.jpg 分析，素材对应关系为：
   - `banner01.png` → Hero 区域 Mockup 轮播（多机型组合图）
   - `banner02.png` → Customized AI Digital Companion 功能截图

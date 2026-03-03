@@ -20,8 +20,8 @@
 **目的**: 创建类型定义、Mock 数据配置和图片资源 — 所有故事的共享基础。
 
 - [x] T001 [P] 在 `src/types/news.ts` 中创建新闻类型定义。按照 data-model.md 定义以下接口/类型并全部导出：`NewsCategory` 联合类型（`'breaking-news' | 'event' | 'about-aura'`）、`NewsCategoryItem` 接口（id, label, order）、`NewsArticle` 接口（id, slug, title, category, featuredImage, imageAlt, publishDate, summary, content, cardSize）、`NewsHeroData` 接口（title, subtitle, backgroundImage, backgroundAlt）、`NewsEmptyStateData` 接口（illustration, message, actionLabel）、`NewsPageData` 接口（hero, categories, emptyState）、`UseNewsArticlesReturn` 接口（articles, loading, error, hasMore, loadMore）、`UseNewsArticleReturn` 接口（article, loading, error）。cardSize 类型为 `'large' | 'small'`。
-- [x] T002 [P] 确认 `public/images/03News/` 目录下的图片资源。目录已有 9 个文件（1 张 Hero 背景 `Aura_APP_News01.png`，8 张卡片图片 `Aura_APP_News02-01.webp` 至 `Aura_APP_News02-08.webp`）。创建一个占位兜底图 `public/images/03News/news-placeholder.webp`（可用现有图片缩略版或 1x1 像素占位图）。
-- [x] T003 在 `src/config/news.ts` 中创建新闻数据配置文件。从 `@/types/news` 导入所有类型。包含：(1) `NEWS_PAGE_SIZE = 6` 和 `MOCK_DELAY_MS = 400` 分页常量，(2) `newsPageData: NewsPageData` 对象（hero 配置使用 `/images/03News/Aura_APP_News01.png` 背景图、标题 "Aura News Center"、副标题 "Stay up-to-date with Aura's latest news, events, and stories."；emptyState 配置使用 `/images/01Home/Aura_Logo.svg` 插图、中文提示文案、"查看全部新闻" 按钮文案），(3) `newsArticles: NewsArticle[]` 数组（8 篇文章，3 篇 breaking-news + 3 篇 event + 2 篇 about-aura，每篇有唯一英文 slug、对应的 `Aura_APP_News02-0X.webp` 图片、ISO 8601 日期降序排列、cardSize 交替 large/small 以匹配设计稿瀑布流布局、content 字段包含 3-5 段 HTML 格式的占位正文），(4) 同步辅助函数：`getAllNewsArticles(): NewsArticle[]`（返回全部文章）、`getNewsArticleBySlug(slug: string): NewsArticle | undefined`（按 slug 查找）、`getNewsArticlesByCategory(category: NewsCategory): NewsArticle[]`（按分类筛选 + publishDate 降序排序）。遵循 `src/config/home.ts` 的已有配置模式。
+- [x] T002 [P] 确认 `public/images/news/` 目录下的图片资源。目录已有 9 个文件（1 张 Hero 背景 `aura-app-news-01.png`，8 张卡片图片 `aura-app-news-02-01.webp` 至 `aura-app-news-02-08.webp`）。创建一个占位兜底图 `public/images/news/news-placeholder.webp`（可用现有图片缩略版或 1x1 像素占位图）。
+- [x] T003 在 `src/config/news.ts` 中创建新闻数据配置文件。从 `@/types/news` 导入所有类型。包含：(1) `NEWS_PAGE_SIZE = 6` 和 `MOCK_DELAY_MS = 400` 分页常量，(2) `newsPageData: NewsPageData` 对象（hero 配置使用 `/images/news/aura-app-news-01.png` 背景图、标题 "Aura News Center"、副标题 "Stay up-to-date with Aura's latest news, events, and stories."；emptyState 配置使用 `/images/home/aura-logo.svg` 插图、中文提示文案、"查看全部新闻" 按钮文案），(3) `newsArticles: NewsArticle[]` 数组（8 篇文章，3 篇 breaking-news + 3 篇 event + 2 篇 about-aura，每篇有唯一英文 slug、对应的 `aura-app-news-02-0X.webp` 图片、ISO 8601 日期降序排列、cardSize 交替 large/small 以匹配设计稿瀑布流布局、content 字段包含 3-5 段 HTML 格式的占位正文），(4) 同步辅助函数：`getAllNewsArticles(): NewsArticle[]`（返回全部文章）、`getNewsArticleBySlug(slug: string): NewsArticle | undefined`（按 slug 查找）、`getNewsArticlesByCategory(category: NewsCategory): NewsArticle[]`（按分类筛选 + publishDate 降序排序）。遵循 `src/config/home.ts` 的已有配置模式。
 
 **检查点**: 类型定义、Mock 数据、同步辅助函数和图片资源就绪。
 
@@ -108,7 +108,7 @@
 
 **目的**: 边界情况处理、响应式微调和构建验证。
 
-- [x] T018 [P] 在 `src/components/news/NewsCard.tsx` 中添加图片加载失败兜底。(1) 添加 `useState` 管理 `imgError` 状态，(2) `next/image` 的 `onError` 回调设置 `imgError = true`，(3) `imgError` 时将 `src` 切换为 `/images/03News/news-placeholder.webp`。
+- [x] T018 [P] 在 `src/components/news/NewsCard.tsx` 中添加图片加载失败兜底。(1) 添加 `useState` 管理 `imgError` 状态，(2) `next/image` 的 `onError` 回调设置 `imgError = true`，(3) `imgError` 时将 `src` 切换为 `/images/news/news-placeholder.webp`。
 - [x] T019 [P] 验证列表页和详情页在所有断点的响应式布局。逐一确认：(1) 移动端（320px-767px）：新闻卡片单列全宽、详情页图片/标题堆叠、分类标签水平可见，(2) 平板端（768px-1279px）：双列网格、详情页保持堆叠或开始并排，(3) 桌面端（1280px+）：三列瀑布流、详情页左图右文 3:2 分割。确认触摸目标 ≥ 44x44px、无水平滚动条。修复发现的任何布局问题。
 - [x] T020 [P] 导航链接验证。检查 `src/config/navigation.ts` 确认包含 `{ label: 'News', href: '/news' }` 项。检查 `src/components/layout/Header.tsx` 在 `/news` 或 `/news/[slug]` 路径时 "News" 导航项是否有激活高亮样式。如缺失则添加。
 - [x] T021 运行 `pnpm lint` 和 `pnpm build` 验证零错误。修复所有 TypeScript 类型错误、ESLint 警告或构建失败。确保所有页面成功生成静态页面（包括所有 `news/[slug]` 详情页）。

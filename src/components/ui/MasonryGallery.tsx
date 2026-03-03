@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { MasonryPhoto } from "@/types/gallery";
 
-const PLACEHOLDER_IMAGE = "/images/03News/news-placeholder.webp";
+const PLACEHOLDER_IMAGE = "/images/news/news-placeholder.webp";
 
 interface MasonryGalleryProps {
   photos: MasonryPhoto[];

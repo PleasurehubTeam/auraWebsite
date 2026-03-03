@@ -46,7 +46,7 @@ export function Header() {
         {/* Brand Logo */}
         <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/images/01Home/Aura_Logo.svg"
+            src="/images/home/aura-logo.svg"
             alt="Aura"
             width={100}
             height={32}

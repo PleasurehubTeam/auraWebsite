@@ -21,7 +21,7 @@
 **目标**: 定义首页所有 TypeScript 类型和内容数据配置，为全部模块组件提供数据基础
 
 - [x] T001 定义首页所有 TypeScript 类型（HeroSlide, TabItem, TabSectionData, ClassicModeData, ClassicModeFeature, RemoteControlData, CarouselCard, ModeItem）在 `src/types/home.ts`
-- [x] T002 创建首页内容数据配置，包含所有模块数据（heroSlides, aiPoweredSection, classicModeSection, soloPlaySection, remoteControlSection, mysteryScriptSection, mysteryCards, modeItems），导入 `src/types/home.ts` 中的类型，所有文案和图片路径（`/images/01Home/*`）按 data-model.md 素材映射填充，写入 `src/config/home.ts`
+- [x] T002 创建首页内容数据配置，包含所有模块数据（heroSlides, aiPoweredSection, classicModeSection, soloPlaySection, remoteControlSection, mysteryScriptSection, mysteryCards, modeItems），导入 `src/types/home.ts` 中的类型，所有文案和图片路径（`/images/home/*`）按 data-model.md 素材映射填充，写入 `src/config/home.ts`
 
 **检查点**: 类型检查通过（`pnpm tsc --noEmit`），配置文件可正常导入
 
@@ -79,9 +79,9 @@
 
 ### 实现
 
-- [x] T010 [P] [US3] 实现 ClassicModeSection 组件：`<section>` 包裹，深色/黑色背景（Tailwind `bg-black` 或 `bg-gray-900`），"Classic Mode" `<h2>` 标题，App 经典遥控器界面截图（`next/image`，Aura_index_banner03.webp），"Thrusting / Shock / Heating" 三种模式标签徽章，功能图标网格（静态展示，不可交互），每个 `ClassicModeFeature` 渲染图标图片 + 名称标签。图标网格使用 CSS Grid/Flex 响应式布局，在 `src/components/home/ClassicModeSection.tsx`
+- [x] T010 [P] [US3] 实现 ClassicModeSection 组件：`<section>` 包裹，深色/黑色背景（Tailwind `bg-black` 或 `bg-gray-900`），"Classic Mode" `<h2>` 标题，App 经典遥控器界面截图（`next/image`，aura-index-banner-03.webp），"Thrusting / Shock / Heating" 三种模式标签徽章，功能图标网格（静态展示，不可交互），每个 `ClassicModeFeature` 渲染图标图片 + 名称标签。图标网格使用 CSS Grid/Flex 响应式布局，在 `src/components/home/ClassicModeSection.tsx`
 - [x] T011 [P] [US3] 实现 SoloPlaySection 组件：`<section>` 包裹，"Solo Play" `<h2>` 标题，从 `src/config/home.ts` 导入 `soloPlaySection` 数据，将 4 个标签（Slide Model、Voice Control Model、Video Sync、Music Sync）传入 TabSwitcher 组件。每个标签有独立的描述文案和场景图片（按 data-model.md 素材映射），在 `src/components/home/SoloPlaySection.tsx`
-- [x] T012 [P] [US3] 实现 RemoteControlSection 组件：`<section>` 包裹，"Remote Control Model" `<h2>` 标题，描述文案（强调异地伴侣互动场景），场景图片（Aura_index_icon02.png，`next/image`）。布局：桌面端图文左右分栏，移动端垂直堆叠，在 `src/components/home/RemoteControlSection.tsx`
+- [x] T012 [P] [US3] 实现 RemoteControlSection 组件：`<section>` 包裹，"Remote Control Model" `<h2>` 标题，描述文案（强调异地伴侣互动场景），场景图片（aura-index-icon-02.png，`next/image`）。布局：桌面端图文左右分栏，移动端垂直堆叠，在 `src/components/home/RemoteControlSection.tsx`
 - [x] T013 [US3] 将 ClassicModeSection、SoloPlaySection 和 RemoteControlSection 按顺序添加到 `src/app/page.tsx`，位于 AIPoweredSection 之后，各自使用对应的配置数据
 
 **检查点**: Classic Mode 深色背景 + 图标网格显示正确；Solo Play 四标签切换流畅；Remote Control 场景展示完整

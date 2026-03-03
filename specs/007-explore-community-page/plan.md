@@ -17,7 +17,7 @@
 **Project Type**: Frontend-only marketing website (Next.js App Router)
 **Performance Goals**: Lighthouse 90+，FCP < 1.5s，LCP < 2.5s，CLS < 0.1，动画 60fps
 **Constraints**: 所有内容区域 max-w-7xl (1280px)，图片 WebP/AVIF 格式，JS bundle 每路由 < 200KB gzipped
-**Scale/Scope**: 单页面（/explore），11 张画廊照片（Aura_Explore-01~11.webp）+ 1 张 Hero 背景（Aura_Explore_Banner-01.webp），5 个新组件文件 + 2 个公共组件提取 + 1 个配置文件 + 1 个类型文件
+**Scale/Scope**: 单页面（/explore），11 张画廊照片（aura-explore-01~11.webp）+ 1 张 Hero 背景（aura-explore-banner-01.webp），5 个新组件文件 + 2 个公共组件提取 + 1 个配置文件 + 1 个类型文件
 
 ## Constitution Check
 
@@ -39,7 +39,7 @@ _GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 | Tech Standards              | Framer Motion 优先动画                         | ✅ PASS | 所有入场/退场/滚动动画使用 Framer Motion                                   |
 | Tech Standards              | Tailwind CSS 唯一样式方案                      | ✅ PASS | 所有样式使用 Tailwind utilities                                            |
 | Dev Workflow                | 一个文件一个组件，PascalCase 命名              | ✅ PASS | 每个组件独立文件                                                           |
-| Dev Workflow                | 图片存储于 public/images/                      | ✅ PASS | 图片路径 /images/05Explore/Aura_Explore-\*.webp（已存在）                  |
+| Dev Workflow                | 图片存储于 public/images/                      | ✅ PASS | 图片路径 /images/explore/aura-explore-\*.webp（已存在）                    |
 
 **GATE 结果**: ✅ 全部通过，无违规项。
 
@@ -80,9 +80,9 @@ src/
 
 public/
 └── images/
-    └── 05Explore/                      # [已存在] Explore 页面图片资源
-        ├── Aura_Explore_Banner-01.webp # Hero 背景图
-        └── Aura_Explore-01~11.webp     # 画廊照片（11 张）
+    └── explore/                        # [已存在] Explore 页面图片资源
+        ├── aura-explore-banner-01.webp # Hero 背景图
+        └── aura-explore-01~11.webp     # 画廊照片（11 张）
 ```
 
 **Structure Decision**: 采用已有的 feature-folder 组件架构（与 about/、news/、home/ 一致）。关键变化在于从 AboutGallerySection 中抽离 MasonryGallery 和 ImagePreview 为公共 UI 组件，同时重构 About 页使用新组件，确保 Constitution IV（可复用 UI 模式抽象为共享组件）的合规性。

@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     description:
       "Download the Aura APP to experience AI-powered intelligent sensory technology.",
     type: "website",
-    images: ["/images/02App/Aura_APP_banner01.png"],
+    images: ["/images/app/aura-app-banner-01.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aura APP — Download AI-Powered Companion App",
     description:
       "Download the Aura APP to experience AI-powered intelligent sensory technology.",
-    images: ["/images/02App/Aura_APP_banner01.png"],
+    images: ["/images/app/aura-app-banner-01.png"],
   },
 };
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { NewsArticle } from "@/types/news";
 
-const PLACEHOLDER_IMAGE = "/images/03News/news-placeholder.webp";
+const PLACEHOLDER_IMAGE = "/images/news/news-placeholder.webp";
 
 interface NewsCardProps {
   article: NewsArticle;

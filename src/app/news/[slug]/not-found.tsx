@@ -6,7 +6,7 @@ export default function NewsNotFound() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 lg:px-8">
       <Image
-        src="/images/01Home/Aura_Logo.svg"
+        src="/images/home/aura-logo.svg"
         alt="Aura"
         width={120}
         height={120}

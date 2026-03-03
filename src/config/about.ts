@@ -4,7 +4,7 @@ export const aboutPageData: AboutPageData = {
   hero: {
     title: "Brand Story",
     slogan: "Bringing Happy to everyone. Let love run wild!",
-    backgroundImage: "/images/04about/Aura_About_Banner.webp",
+    backgroundImage: "/images/about/aura-about-banner.webp",
     backgroundAlt: "Aura brand story hero background",
     fallbackColor: "#1a1a2e",
   },
@@ -40,7 +40,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-01",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-01.webp",
+      featuredImage: "/images/about/social-01.webp",
       imageAlt: "Social contact moment shared on Aura",
       category: "social-contact",
       cardSize: "large",
@@ -48,7 +48,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-02",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-02.webp",
+      featuredImage: "/images/about/social-02.webp",
       imageAlt: "Friends connecting through Aura",
       category: "social-contact",
       cardSize: "small",
@@ -56,7 +56,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-03",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-03.webp",
+      featuredImage: "/images/about/social-03.webp",
       imageAlt: "Aura community gathering",
       category: "social-contact",
       cardSize: "small",
@@ -64,7 +64,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-04",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-04.webp",
+      featuredImage: "/images/about/social-04.webp",
       imageAlt: "Sharing moments on Aura platform",
       category: "social-contact",
       cardSize: "small",
@@ -72,7 +72,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-05",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-05.webp",
+      featuredImage: "/images/about/social-05.webp",
       imageAlt: "Aura social connection experience",
       category: "social-contact",
       cardSize: "small",
@@ -80,7 +80,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-06",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-06.webp",
+      featuredImage: "/images/about/social-06.webp",
       imageAlt: "Aura community member story",
       category: "social-contact",
       cardSize: "large",
@@ -88,7 +88,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sc-07",
       title: "My Aura stories",
-      featuredImage: "/images/04about/social-07.webp",
+      featuredImage: "/images/about/social-07.webp",
       imageAlt: "Aura user sharing their journey",
       category: "social-contact",
       cardSize: "small",
@@ -97,7 +97,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sh-01",
       title: "My Aura stories",
-      featuredImage: "/images/04about/share-01.webp",
+      featuredImage: "/images/about/share-01.webp",
       imageAlt: "Sharing creative content on Aura",
       category: "share",
       cardSize: "large",
@@ -105,7 +105,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sh-02",
       title: "My Aura stories",
-      featuredImage: "/images/04about/share-02.webp",
+      featuredImage: "/images/about/share-02.webp",
       imageAlt: "Aura content sharing experience",
       category: "share",
       cardSize: "small",
@@ -113,7 +113,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sh-03",
       title: "My Aura stories",
-      featuredImage: "/images/04about/share-03.webp",
+      featuredImage: "/images/about/share-03.webp",
       imageAlt: "Community sharing moments",
       category: "share",
       cardSize: "small",
@@ -121,7 +121,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sh-04",
       title: "My Aura stories",
-      featuredImage: "/images/04about/share-04.webp",
+      featuredImage: "/images/about/share-04.webp",
       imageAlt: "Sharing life on Aura",
       category: "share",
       cardSize: "small",
@@ -129,7 +129,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "sh-05",
       title: "My Aura stories",
-      featuredImage: "/images/04about/share-05.webp",
+      featuredImage: "/images/about/share-05.webp",
       imageAlt: "Aura sharing community",
       category: "share",
       cardSize: "large",
@@ -138,7 +138,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "br-01",
       title: "My Aura stories",
-      featuredImage: "/images/04about/brand-01.webp",
+      featuredImage: "/images/about/brand-01.webp",
       imageAlt: "Aura brand identity showcase",
       category: "brand",
       cardSize: "small",
@@ -146,7 +146,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "br-02",
       title: "My Aura stories",
-      featuredImage: "/images/04about/brand-02.webp",
+      featuredImage: "/images/about/brand-02.webp",
       imageAlt: "Aura brand visual story",
       category: "brand",
       cardSize: "large",
@@ -154,7 +154,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "br-03",
       title: "My Aura stories",
-      featuredImage: "/images/04about/brand-03.webp",
+      featuredImage: "/images/about/brand-03.webp",
       imageAlt: "Aura brand culture",
       category: "brand",
       cardSize: "small",
@@ -162,7 +162,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "br-04",
       title: "My Aura stories",
-      featuredImage: "/images/04about/brand-04.webp",
+      featuredImage: "/images/about/brand-04.webp",
       imageAlt: "Aura brand expression",
       category: "brand",
       cardSize: "small",
@@ -170,7 +170,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "br-05",
       title: "My Aura stories",
-      featuredImage: "/images/04about/brand-05.webp",
+      featuredImage: "/images/about/brand-05.webp",
       imageAlt: "Aura brand community",
       category: "brand",
       cardSize: "small",
@@ -179,7 +179,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-01",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-01.webp",
+      featuredImage: "/images/about/aura-about-01.webp",
       imageAlt: "Aura community activity highlight",
       category: "activity",
       cardSize: "small",
@@ -187,7 +187,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-02",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-02.webp",
+      featuredImage: "/images/about/aura-about-02.webp",
       imageAlt: "Aura event participation",
       category: "activity",
       cardSize: "large",
@@ -195,7 +195,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-03",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-03.webp",
+      featuredImage: "/images/about/aura-about-03.webp",
       imageAlt: "Aura community event",
       category: "activity",
       cardSize: "small",
@@ -203,7 +203,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-04",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-04.webp",
+      featuredImage: "/images/about/aura-about-04.webp",
       imageAlt: "Active Aura community members",
       category: "activity",
       cardSize: "small",
@@ -211,7 +211,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-05",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-05.webp",
+      featuredImage: "/images/about/aura-about-05.webp",
       imageAlt: "Aura activity showcase",
       category: "activity",
       cardSize: "large",
@@ -219,7 +219,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-06",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-06.webp",
+      featuredImage: "/images/about/aura-about-06.webp",
       imageAlt: "Aura activity showcase",
       category: "activity",
       cardSize: "large",
@@ -227,7 +227,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-07",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-07.webp",
+      featuredImage: "/images/about/aura-about-07.webp",
       imageAlt: "Aura activity showcase",
       category: "activity",
       cardSize: "large",
@@ -235,7 +235,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-08",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-08.webp",
+      featuredImage: "/images/about/aura-about-08.webp",
       imageAlt: "Aura activity showcase",
       category: "activity",
       cardSize: "large",
@@ -243,7 +243,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-09",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-03.webp",
+      featuredImage: "/images/about/aura-about-03.webp",
       imageAlt: "Aura community gathering",
       category: "activity",
       cardSize: "small",
@@ -251,7 +251,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-10",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-05.webp",
+      featuredImage: "/images/about/aura-about-05.webp",
       imageAlt: "Aura team bonding",
       category: "activity",
       cardSize: "large",
@@ -259,7 +259,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-11",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-01.webp",
+      featuredImage: "/images/about/aura-about-01.webp",
       imageAlt: "Aura outdoor activity",
       category: "activity",
       cardSize: "small",
@@ -267,7 +267,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-12",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-07.webp",
+      featuredImage: "/images/about/aura-about-07.webp",
       imageAlt: "Aura creative workshop",
       category: "activity",
       cardSize: "large",
@@ -275,7 +275,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-13",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-02.webp",
+      featuredImage: "/images/about/aura-about-02.webp",
       imageAlt: "Aura celebration event",
       category: "activity",
       cardSize: "small",
@@ -283,7 +283,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-14",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-04.webp",
+      featuredImage: "/images/about/aura-about-04.webp",
       imageAlt: "Aura member spotlight",
       category: "activity",
       cardSize: "small",
@@ -291,7 +291,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-15",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-06.webp",
+      featuredImage: "/images/about/aura-about-06.webp",
       imageAlt: "Aura seasonal event",
       category: "activity",
       cardSize: "large",
@@ -299,7 +299,7 @@ export const aboutPageData: AboutPageData = {
     {
       id: "ac-16",
       title: "My Aura stories",
-      featuredImage: "/images/04about/Aura_About-08.webp",
+      featuredImage: "/images/about/aura-about-08.webp",
       imageAlt: "Aura community fun day",
       category: "activity",
       cardSize: "small",

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { NewsArticle } from "@/types/news";
 
-const PLACEHOLDER_IMAGE = "/images/03News/news-placeholder.webp";
+const PLACEHOLDER_IMAGE = "/images/news/news-placeholder.webp";
 const MOBILE_PAGE_SIZE = 10;
 
 function MobileNewsItem({

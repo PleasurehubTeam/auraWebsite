@@ -10,7 +10,7 @@ import { NewsCategoryTabs } from "@/components/news/NewsCategoryTabs";
 import { NewsEmptyState } from "@/components/news/NewsEmptyState";
 import { MobileNewsList } from "@/components/news/MobileNewsList";
 
-const PLACEHOLDER_IMAGE = "/images/03News/news-placeholder.webp";
+const PLACEHOLDER_IMAGE = "/images/news/news-placeholder.webp";
 
 /** Responsive column count: 1 (mobile) / 2 (md) / 4 (lg) */
 function useColumnCount() {

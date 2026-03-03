@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 // Next.js serves public/ at root, so no "/public" prefix
-const SPRITE_PATH = "/images/01Home/Aura_index_icon01.svg";
+const SPRITE_PATH = "/images/home/aura-index-icon-01.svg";
 
 /**
  * Sprite: viewBox 0 0 461.53 70.26
