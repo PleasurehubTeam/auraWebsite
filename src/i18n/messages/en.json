@@ -1,0 +1,25 @@
+{
+  "common": {
+    "brandName": "Aura",
+    "download": "Download",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "home": "Home",
+    "app": "APP",
+    "news": "News",
+    "about": "About",
+    "explore": "Explore"
+  },
+  "ageVerification": {
+    "title": "Age Verification",
+    "question": "Are you 18 or older?",
+    "confirm": "Yes, I am 18+",
+    "decline": "No, I am under 18"
+  },
+  "cookie": {
+    "message": "We use cookies to enhance your browsing experience. By continuing to use this site, you agree to our use of cookies.",
+    "accept": "Accept",
+    "privacyPolicy": "Privacy Policy"
+  }
+}
