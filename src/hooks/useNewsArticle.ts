@@ -8,7 +8,7 @@ export function useNewsArticle(slug: string): UseNewsArticleReturn {
   const [article, setArticle] = useState<UseNewsArticleReturn["article"]>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>();
+  const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
   useEffect(() => {
     setLoading(true);
