@@ -24,10 +24,9 @@ export const footerLinkGroups: FooterLinkGroup[] = [
   {
     title: "Contact",
     links: [
-      { label: "Tel: +86 136 8888 8888", href: "tel:+861368888888" },
       {
-        label: "E-mail: support@Aura.com / support@Aura.ai",
-        href: "mailto:support@Aura.com",
+        label: "E-mail: support@Aura.ai",
+        href: "mailto:support@Aura.ai",
       },
       { label: "Online:", href: "#" },
     ],

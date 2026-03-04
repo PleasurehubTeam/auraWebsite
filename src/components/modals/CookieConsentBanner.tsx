@@ -12,7 +12,7 @@ export function CookieConsentBanner() {
     <AnimatePresence>
       {isLoaded && !isConsented && (
         <motion.div
-          className="fixed bottom-0 left-0 right-0 z-40 border-t border-white/10 bg-gray-900/95 px-4 py-4 backdrop-blur-sm sm:px-6"
+          className="fixed bottom-0 left-0 right-0 z-[100] border-t border-white/10 bg-gray-900/95 px-4 py-4 backdrop-blur-sm sm:px-6"
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
           exit={{ y: "100%" }}
