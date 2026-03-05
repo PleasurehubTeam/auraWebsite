@@ -89,7 +89,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
                 </h1>
               </div>
 
-              {/* 移动端：首屏显示下载按钮，非首屏显示等高占位块 */}
+              {/* 移动端：首屏显示副标题，非首屏显示等高占位块 */}
               {activeIndex === 0 ? (
                 <div className="relative z-[2] w-full pt-[400px] sm:hidden sm:pt-0">
                   {activeSlide.subtitle && (
@@ -97,18 +97,6 @@ export function HeroSection({ slides }: HeroSectionProps) {
                       {activeSlide.subtitle}
                     </p>
                   )}
-                  <div className="flex w-full justify-center gap-8">
-                    <StoreBadgeLink
-                      type="appStore"
-                      href={downloadConfig.appStoreUrl}
-                      className="h-[55px]"
-                    />
-                    <StoreBadgeLink
-                      type="googlePlay"
-                      href={downloadConfig.googlePlayUrl}
-                      className="h-[55px]"
-                    />
-                  </div>
                 </div>
               ) : (
                 <div className="w-full pt-[496px] sm:hidden sm:pt-0" />
@@ -130,7 +118,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
         </AnimatePresence>
       </div>
 
-      {/* 下载按钮 - 右下角，仅第一张幻灯片显示 */}
+      {/* 副标题 - 右下角，仅第一张幻灯片显示 */}
       <AnimatePresence>
         {activeIndex === 0 && (
           <motion.div
@@ -147,18 +135,6 @@ export function HeroSection({ slides }: HeroSectionProps) {
                     {activeSlide.subtitle}
                   </p>
                 )}
-                <div className="flex gap-8">
-                  <StoreBadgeLink
-                    type="appStore"
-                    href={downloadConfig.appStoreUrl}
-                    className="h-[40px] sm:h-[55px] lg:h-[70px]"
-                  />
-                  <StoreBadgeLink
-                    type="googlePlay"
-                    href={downloadConfig.googlePlayUrl}
-                    className="h-[40px] sm:h-[55px] lg:h-[70px]"
-                  />
-                </div>
               </div>
             </div>
           </motion.div>

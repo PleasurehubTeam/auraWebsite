@@ -42,19 +42,7 @@ export function DownloadCTA() {
             <span className="text-xl text-black">Aura</span>
           </div>
 
-          {/* 商店下载按钮 */}
-          <div className="flex flex-col items-center gap-8 sm:flex-row">
-            <StoreBadgeLink
-              type="appStore"
-              href={downloadConfig.appStoreUrl}
-              className="h-[55px] sm:h-[55px] lg:h-[70px]"
-            />
-            <StoreBadgeLink
-              type="googlePlay"
-              href={downloadConfig.googlePlayUrl}
-              className="h-[55px] sm:h-[55px] lg:h-[70px]"
-            />
-          </div>
+          {/* 商店下载按钮暂时隐藏 */}
         </div>
       </div>
     </section>

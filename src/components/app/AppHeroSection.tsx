@@ -25,18 +25,7 @@ export function AppHeroSection({ data }: AppHeroSectionProps) {
           {data.title}
         </h1>
 
-        <div className="mt-4 flex justify-center gap-6 sm:mt-6">
-          <StoreBadgeLink
-            type="appStore"
-            href={downloadConfig.appStoreUrl}
-            className="h-[55px] sm:h-[55px] lg:h-[70px]"
-          />
-          <StoreBadgeLink
-            type="googlePlay"
-            href={downloadConfig.googlePlayUrl}
-            className="h-[55px] sm:h-[55px] lg:h-[70px]"
-          />
-        </div>
+        {/* 下载按钮暂时隐藏 */}
       </div>
     </section>
   );

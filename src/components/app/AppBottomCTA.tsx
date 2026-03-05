@@ -36,18 +36,7 @@ export function AppBottomCTA({ data }: AppBottomCTAProps) {
           {data.description}
         </p>
 
-        <div className="mt-8 flex justify-center gap-6">
-          <StoreBadgeLink
-            type="appStore"
-            href={downloadConfig.appStoreUrl}
-            className="h-[55px] sm:h-[55px] lg:h-[70px]"
-          />
-          <StoreBadgeLink
-            type="googlePlay"
-            href={downloadConfig.googlePlayUrl}
-            className="h-[55px] sm:h-[55px] lg:h-[70px]"
-          />
-        </div>
+        {/* 下载按钮暂时隐藏 */}
       </div>
     </section>
   );
