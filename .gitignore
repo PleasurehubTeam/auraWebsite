@@ -50,3 +50,11 @@ coverage/
 
 # Design assets (not source code)
 云漫互动Aura官网设计（国外）/
+
+# OpenNext
+.open-next
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
