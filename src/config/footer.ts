@@ -25,8 +25,8 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     title: "Contact",
     links: [
       {
-        label: "E-mail: support@Aura.ai",
-        href: "mailto:support@Aura.ai",
+        label: "E-mail: support@realaura.ai",
+        href: "mailto:support@realaura.ai",
       },
       { label: "Online:", href: "#" },
     ],
