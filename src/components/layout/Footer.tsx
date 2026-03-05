@@ -27,27 +27,7 @@ export function Footer() {
   return (
     <footer className="bg-black px-4 py-[30px] sm:px-6 sm:py-12 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        {/* 移动端: 仅显示 Follow 模块 */}
-        <div className="flex flex-col items-center gap-3 pb-5 sm:hidden">
-          <span className="text-sm text-white">Follow Us</span>
-          <div className="flex items-center gap-3">
-            {socialMediaLinks.map((social) => {
-              const IconComponent = socialIconMap[social.platform];
-              return (
-                <a
-                  key={social.platform}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-white transition-colors hover:text-brand-pink"
-                >
-                  <IconComponent className="h-5 w-5" />
-                </a>
-              );
-            })}
-          </div>
-        </div>
+        {/* 移动端 Follow 模块暂时隐藏 */}
 
         {/* 桌面端: 链接分组 */}
         <div className="hidden gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3">
@@ -80,27 +60,7 @@ export function Footer() {
                 ))}
               </ul>
 
-              {/* 社交媒体图标 — 跟在 Contact 列下方 */}
-              {group.title === "Contact" && (
-                <div className="mt-4 flex items-center gap-3">
-                  <span className="text-sm text-white">Follow Us</span>
-                  {socialMediaLinks.map((social) => {
-                    const IconComponent = socialIconMap[social.platform];
-                    return (
-                      <a
-                        key={social.platform}
-                        href={social.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={social.label}
-                        className="flex h-8 w-8 items-center justify-center rounded-full text-white transition-colors hover:text-brand-pink"
-                      >
-                        <IconComponent className="h-5 w-5" />
-                      </a>
-                    );
-                  })}
-                </div>
-              )}
+              {/* 社交媒体图标暂时隐藏 */}
             </div>
           ))}
         </div>

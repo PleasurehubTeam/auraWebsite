@@ -6,21 +6,21 @@ import { AppBottomCTA } from "@/components/app/AppBottomCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Aura APP — Download AI-Powered Companion App",
+  title: "Aura APP — AI-Powered Companion App",
   description:
-    "Download the Aura APP to experience AI-powered intelligent sensory technology. Customize your AI companion, control smart devices, and explore immersive interactive content.",
+    "Aura APP — experience AI-powered intelligent sensory technology. Customize your AI companion, control smart devices, and explore immersive interactive content.",
   openGraph: {
-    title: "Aura APP — Download AI-Powered Companion App",
+    title: "Aura APP — AI-Powered Companion App",
     description:
-      "Download the Aura APP to experience AI-powered intelligent sensory technology.",
+      "Aura APP — experience AI-powered intelligent sensory technology.",
     type: "website",
     images: ["/images/app/aura-app-banner-01.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aura APP — Download AI-Powered Companion App",
+    title: "Aura APP — AI-Powered Companion App",
     description:
-      "Download the Aura APP to experience AI-powered intelligent sensory technology.",
+      "Aura APP — experience AI-powered intelligent sensory technology.",
     images: ["/images/app/aura-app-banner-01.png"],
   },
 };

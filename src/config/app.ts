@@ -3,7 +3,7 @@ import type { AppPageData } from "@/types/app";
 export const appPageData: AppPageData = {
   // ─── Hero Section ──────────────────────────────────────────
   hero: {
-    title: "Download Aura APP",
+    title: "Aura APP",
     mockups: [
       {
         id: "mockup-01",
@@ -129,9 +129,8 @@ export const appPageData: AppPageData = {
 
   // ─── Bottom CTA Section ────────────────────────────────────
   bottomCTA: {
-    heading: "Download",
-    description:
-      "Experience AI-powered intelligent sensory technology. Download Aura now on your favorite platform.",
+    heading: "Aura",
+    description: "Experience AI-powered intelligent sensory technology.",
     logoImage: "/images/home/aura-logo.svg",
     logoAlt: "Aura brand logo",
   },

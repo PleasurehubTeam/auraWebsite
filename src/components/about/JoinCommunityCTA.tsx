@@ -59,25 +59,7 @@ export function JoinCommunityCTA({ data }: JoinCommunityCTAProps) {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal direction="up" delay={0.3}>
-          <div className="hidden items-center justify-center gap-6 md:flex">
-            {visibleLinks.map((social) => {
-              const Icon = socialIconMap[social.platform];
-              return (
-                <a
-                  key={social.platform}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-gray-700 transition-colors hover:bg-white hover:text-brand-pink"
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              );
-            })}
-          </div>
-        </ScrollReveal>
+        {/* 社交媒体图标暂时隐藏 */}
       </div>
     </section>
   );

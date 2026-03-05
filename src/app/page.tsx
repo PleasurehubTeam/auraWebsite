@@ -79,10 +79,7 @@ export default function HomePage() {
         <ModeFunctionSection items={modeItems} />
       </ScrollReveal>
 
-      {/* Download CTA (from global modules) */}
-      <ScrollReveal delay={0.1} className="relative z-[10]">
-        <DownloadCTA />
-      </ScrollReveal>
+      {/* Download CTA 暂时隐藏 */}
     </main>
   );
 }
