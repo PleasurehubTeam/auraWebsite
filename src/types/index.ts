@@ -1,3 +1,11 @@
+// Privacy Policy
+export type {
+  PolicyMetadata,
+  PolicySubsection,
+  PrivacyPolicySection,
+  PrivacyPolicyData,
+} from "./privacy-policy";
+
 // Navigation
 export interface NavigationItem {
   label: string;
