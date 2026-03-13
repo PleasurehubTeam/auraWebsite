@@ -1,0 +1,8 @@
+# Allow embedding legal pages via iframe
+/privacy-policy/embed/*
+  X-Frame-Options: ALLOWALL
+  Content-Security-Policy: frame-ancestors *
+
+/user-agreement/embed/*
+  X-Frame-Options: ALLOWALL
+  Content-Security-Policy: frame-ancestors *
