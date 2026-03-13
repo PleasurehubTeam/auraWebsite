@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { privacyPolicyData } from "@/config/privacy-policy";
-import { PrivacyPolicyContent } from "@/components/privacy-policy/PrivacyPolicyContent";
-import { TableOfContents } from "@/components/privacy-policy/TableOfContents";
-import { ScrollToTopButton } from "@/components/privacy-policy/ScrollToTopButton";
+import {
+  LegalPageContent,
+  LegalTableOfContents,
+  ScrollToTopButton,
+} from "@/components/legal";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -30,9 +32,9 @@ export default function PrivacyPolicyPage() {
           {privacyPolicyData.metadata.title}
         </h1>
 
-        <TableOfContents sections={privacyPolicyData.sections} />
+        <LegalTableOfContents sections={privacyPolicyData.sections} />
 
-        <PrivacyPolicyContent
+        <LegalPageContent
           sections={privacyPolicyData.sections}
           metadata={privacyPolicyData.metadata}
         />

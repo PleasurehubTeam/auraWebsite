@@ -1,27 +1,6 @@
-// ─── Privacy Policy ──────────────────────────────────────────
-
-export interface PolicyMetadata {
-  title: string;
-  effectiveDate: string;
-  lastUpdated: string;
-  version?: string;
-}
-
-export interface PolicySubsection {
-  id: string;
-  title: string;
-  content: string[];
-}
-
-export interface PrivacyPolicySection {
-  id: string;
-  title: string;
-  content: string[];
-  subsections?: PolicySubsection[];
-}
-
-// ─── Page Data (Top-Level Aggregate) ──────────────────────────
-export interface PrivacyPolicyData {
-  metadata: PolicyMetadata;
-  sections: PrivacyPolicySection[];
-}
+// Re-export shared legal types with privacy-policy-specific aliases
+// for backward compatibility with existing imports.
+export type { PolicyMetadata } from "./legal";
+export type { LegalSubsection as PolicySubsection } from "./legal";
+export type { LegalSection as PrivacyPolicySection } from "./legal";
+export type { LegalPageData as PrivacyPolicyData } from "./legal";

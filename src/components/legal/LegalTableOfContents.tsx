@@ -1,12 +1,12 @@
 "use client";
 
-import type { PrivacyPolicySection } from "@/types/privacy-policy";
+import type { LegalSection } from "@/types/legal";
 
-interface TableOfContentsProps {
-  sections: PrivacyPolicySection[];
+interface LegalTableOfContentsProps {
+  sections: LegalSection[];
 }
 
-export function TableOfContents({ sections }: TableOfContentsProps) {
+export function LegalTableOfContents({ sections }: LegalTableOfContentsProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const element = document.getElementById(id);
