@@ -3,115 +3,131 @@ import type { PrivacyPolicyData } from "@/types/privacy-policy";
 export const privacyPolicyData: PrivacyPolicyData = {
   metadata: {
     title: "Privacy Policy",
-    effectiveDate: "2026-03-01",
-    lastUpdated: "2026-03-07",
-    version: "1.0",
+    effectiveDate: "2026-03-13",
+    lastUpdated: "2026-03-13",
+    version: "2.0",
   },
 
   sections: [
     {
-      id: "introduction",
-      title: "Introduction",
+      id: "scope",
+      title: "1. Scope",
       content: [
-        'Welcome to Aura ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience when using our platform. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website (collectively, the "Service").',
-        "By accessing or using the Service, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not access or use the Service.",
+        'Welcome to Aura. EchoAI Digital Limited (回响智能科技有限公司) ("we," "us," or "our") values your privacy. This Privacy Policy explains how we collect, use, store, share, and protect your personal information, and the rights available to you.',
+        'This Policy applies to Aura websites, apps, and related services (collectively, the "Services"), for both registered and unregistered users.',
+      ],
+    },
+    {
+      id: "age-and-content-notice",
+      title: "2. Age and Content Notice",
+      content: [
+        "The Services are for users who are at least 18 years old, or the age of majority in their jurisdiction.",
+        "The Services may include adult/sexual content. If you do not meet the age requirement, or such content is unlawful where you are located, stop using the Services immediately.",
       ],
     },
     {
       id: "information-we-collect",
-      title: "Information We Collect",
-      content: [
-        "We collect information that you provide directly to us, information we obtain automatically when you use the Service, and information from third-party sources.",
-      ],
+      title: "3. Information We Collect",
+      content: [],
       subsections: [
         {
           id: "information-you-provide",
-          title: "Information You Provide",
+          title: "3.1 Information You Provide",
           content: [
-            "When you create an account, you provide us with personal information such as your name, email address, date of birth, and profile photo. You may also provide additional information such as your bio, interests, and location to enhance your profile.",
-            "When you use our Service, you may share content including photos, messages, comments, and other materials. We collect and store this content along with related metadata.",
+            "• Account information: email, nickname, password, login credentials.\n• Profile and preferences: character settings, voice preferences, interaction settings.\n• User content: chat text, prompts, uploads, feedback, customer support communications.\n• Transaction information: order details, payment status, billing records (payment card data is processed by third-party payment providers).",
           ],
         },
         {
           id: "information-collected-automatically",
-          title: "Information Collected Automatically",
+          title: "3.2 Information Collected Automatically",
           content: [
-            "When you access or use our Service, we automatically collect certain information, including your IP address, device type, operating system, browser type, unique device identifiers, and mobile network information.",
-            "We also collect information about your usage of the Service, such as the pages you visit, the features you use, the actions you take, the time, frequency, and duration of your activities.",
+            "• Device and network data: device model, OS version, IP address, device identifiers, logs.\n• Usage data: access time, clicks, session duration, crash/performance data.\n• Control and sync data: remote-control commands, connection status, sync metadata.",
           ],
         },
         {
-          id: "information-from-third-parties",
-          title: "Information from Third Parties",
+          id: "sensitive-information",
+          title: "3.3 Sensitive Information",
           content: [
-            "We may receive information about you from third-party services if you choose to connect your Aura account with those services. This may include your name, profile picture, and friend list from social media platforms.",
+            "Given the nature of the Services, you may provide or generate information related to sex life, sexual preferences, or sexual orientation. We process such data in accordance with applicable law and obtain required consent where legally necessary.",
           ],
         },
       ],
     },
     {
-      id: "how-we-use-your-information",
-      title: "How We Use Your Information",
+      id: "how-we-use-information",
+      title: "4. How We Use Information",
       content: [
-        "We use the information we collect to provide, maintain, and improve our Service, and to develop new features and functionality. Specifically, we use your information to:",
-        "• Create and manage your account, and provide you with customer support.\n• Personalize your experience and deliver content and features that match your interests.\n• Process and complete transactions, and send you related information.\n• Send you technical notices, updates, security alerts, and support and administrative messages.\n• Communicate with you about products, services, offers, promotions, and events.\n• Monitor and analyze trends, usage, and activities in connection with our Service.\n• Detect, investigate, and prevent fraudulent transactions and other illegal activities.\n• Comply with legal obligations and enforce our terms and policies.",
+        "We may use personal information to:",
+        "• Provide and maintain the Services (accounts, AI interaction, device control, support);\n• Protect safety and security (anti-fraud, abuse prevention, auditing);\n• Improve products and user experience (debugging, quality analysis, optimization);\n• Conduct analytics and operations (aggregated or de-identified where appropriate);\n• Meet legal obligations and handle disputes;\n• Send service and marketing communications (you may opt out of marketing at any time).",
       ],
     },
     {
-      id: "information-sharing",
-      title: "Information Sharing",
+      id: "ai-and-third-party-capabilities",
+      title: "5. AI and Third-Party Capabilities",
       content: [
-        "We do not sell your personal information to third parties. We may share your information in the following circumstances:",
-        "• With other users: When you share content or interact with other users on the Service, your profile information and content may be visible to them.\n• With service providers: We share information with third-party vendors, consultants, and service providers who perform services on our behalf, such as hosting, analytics, and customer support.\n• For legal reasons: We may disclose your information if required to do so by law or in response to valid requests by public authorities.\n• Business transfers: If we are involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.\n• With your consent: We may share your information with third parties when you give us explicit consent to do so.",
+        "We may use proprietary and third-party AI/cloud services to provide reply generation, content generation, moderation, safety, and optimization features.",
+        "Where permitted by law, related data may be used for service quality improvement, model capability optimization, and safety governance. Where required by law, we will provide additional notice and obtain consent.",
       ],
     },
     {
-      id: "your-rights-and-choices",
-      title: "Your Rights and Choices",
+      id: "sharing-and-disclosure",
+      title: "6. Sharing and Disclosure",
       content: [
-        "You have certain rights regarding your personal information:",
-        "• Access and update: You can access and update your account information at any time through the app settings.\n• Delete your account: You can request deletion of your account and associated data by contacting us at support@realaura.ai.\n• Opt out of communications: You can opt out of receiving promotional emails by following the unsubscribe instructions in those emails.\n• Data portability: You have the right to request a copy of your personal data in a structured, machine-readable format.\n• Withdraw consent: Where we rely on your consent to process your personal information, you have the right to withdraw that consent at any time.",
+        "We do not sell your personal information.",
+        "We may share information:",
+        "• At your direction (for example, remote connection features);\n• With service providers (cloud, AI, payment, analytics, support);\n• In corporate transactions (merger, acquisition, restructuring, asset sale);\n• To comply with law or to protect legal rights, safety, and security.",
       ],
     },
     {
-      id: "cookies-and-tracking",
-      title: "Cookies and Tracking Technologies",
+      id: "international-data-transfers",
+      title: "7. International Data Transfers",
       content: [
-        "We use cookies and similar tracking technologies to collect and track information about your use of the Service and to improve and analyze our Service.",
-        "Cookies are small data files stored on your device. We use both session cookies (which expire when you close your browser) and persistent cookies (which remain on your device until deleted) for various purposes including authentication, preferences, analytics, and advertising.",
-        "You can set your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, some features of the Service may not function properly.",
+        "Your information may be transferred to and stored outside your country/region. We implement reasonable safeguards as required by applicable law.",
       ],
     },
     {
-      id: "data-security",
-      title: "Data Security",
+      id: "data-retention",
+      title: "8. Data Retention",
       content: [
-        "We take reasonable measures to help protect your personal information from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction. We implement appropriate technical and organizational safeguards to protect the security of your data.",
-        "However, no method of transmission over the Internet or method of electronic storage is completely secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.",
+        "We retain information based on business need and legal obligations, generally:",
+        "• Account data: during account life and up to 180 days after closure;\n• Conversation/user content: up to 12 months (deletion requests enter cleanup workflow);\n• Security logs: up to 12 months;\n• Support records: up to 5 years;\n• Transaction/financial records: up to 10 years, or longer if legally required;\n• Risk-control records: up to 2 years, or longer if legally required.",
       ],
     },
     {
-      id: "childrens-privacy",
-      title: "Children's Privacy",
+      id: "your-rights",
+      title: "9. Your Rights",
       content: [
-        "The Service is not intended for use by anyone under the age of 18. We do not knowingly collect personal information from children under 18. If we learn that we have collected personal information from a child under 18, we will take steps to delete that information as soon as possible.",
-        "If you are a parent or guardian and you believe that your child has provided us with personal information, please contact us at support@realaura.ai so that we can take appropriate action.",
+        "Subject to applicable law, you may request access, correction, deletion, restriction, portability, objection, withdrawal of consent, and account closure.",
+        "Request channel: support@realaura.ai",
       ],
     },
     {
-      id: "changes-to-this-policy",
-      title: "Changes to This Policy",
+      id: "california-notice",
+      title: "10. California Notice (CCPA/CPRA)",
       content: [
-        'We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top.',
-        "We encourage you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page. Your continued use of the Service after any changes constitutes your acceptance of the updated Privacy Policy.",
+        "• We may collect categories of personal information, including sensitive personal information as defined by law.\n• Purposes include service delivery, security/risk control, improvement, support, and legal compliance.\n• We do not sell or share personal information for cross-context behavioral advertising.\n• California residents may exercise rights to know, access, correct, delete, data portability, and non-discrimination.\n• Request channel: support@realaura.ai",
       ],
     },
     {
-      id: "contact-us",
-      title: "Contact Us",
+      id: "eea-uk-switzerland",
+      title: "11. EEA/UK/Switzerland Users",
       content: [
-        "If you have any questions about this Privacy Policy, please contact us:",
-        "• Email: support@realaura.ai\n• Website: https://realaura.ai",
+        "Where applicable, you may exercise GDPR rights and lodge a complaint with your local data protection authority.",
+      ],
+    },
+    {
+      id: "security",
+      title: "12. Security",
+      content: [
+        "We use reasonable technical and organizational safeguards, including encryption in transit, access controls, least-privilege controls, and security monitoring. No system can be guaranteed absolutely secure.",
+      ],
+    },
+    {
+      id: "updates-and-contact",
+      title: "13. Updates and Contact",
+      content: [
+        "We may update this Policy from time to time. Material changes will be notified by in-app notice, email, or other reasonable means.",
+        "Contact: support@realaura.ai",
       ],
     },
   ],

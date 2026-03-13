@@ -1,15 +1,15 @@
 import type {
   PolicyMetadata,
-  PrivacyPolicySection,
-  PolicySubsection,
-} from "@/types/privacy-policy";
+  LegalSection,
+  LegalSubsection,
+} from "@/types/legal";
 
-interface PrivacyPolicyContentProps {
-  sections: PrivacyPolicySection[];
+interface LegalPageContentProps {
+  sections: LegalSection[];
   metadata: PolicyMetadata;
 }
 
-function Subsection({ subsection }: { subsection: PolicySubsection }) {
+function Subsection({ subsection }: { subsection: LegalSubsection }) {
   return (
     <div id={subsection.id} className="mt-6">
       <h3 className="text-lg font-semibold text-gray-900">
@@ -27,7 +27,7 @@ function Subsection({ subsection }: { subsection: PolicySubsection }) {
   );
 }
 
-function Section({ section }: { section: PrivacyPolicySection }) {
+function Section({ section }: { section: LegalSection }) {
   return (
     <section id={section.id} className="scroll-mt-24">
       <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">
@@ -48,10 +48,10 @@ function Section({ section }: { section: PrivacyPolicySection }) {
   );
 }
 
-export function PrivacyPolicyContent({
+export function LegalPageContent({
   sections,
   metadata,
-}: PrivacyPolicyContentProps) {
+}: LegalPageContentProps) {
   return (
     <article className="space-y-10">
       <p className="text-sm text-gray-500">

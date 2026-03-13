@@ -1,6 +1,13 @@
-// Privacy Policy
+// Shared Legal Document Types
 export type {
   PolicyMetadata,
+  LegalSubsection,
+  LegalSection,
+  LegalPageData,
+} from "./legal";
+
+// Privacy Policy (backward-compatible aliases)
+export type {
   PolicySubsection,
   PrivacyPolicySection,
   PrivacyPolicyData,
