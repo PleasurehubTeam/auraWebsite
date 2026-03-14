@@ -13,7 +13,7 @@ export const privacyPolicyData: PrivacyPolicyData = {
       id: "scope",
       title: "1. Scope",
       content: [
-        'Welcome to Aura. EchoAI Digital Limited (回响智能科技有限公司) ("we," "us," or "our") values your privacy. This Privacy Policy explains how we collect, use, store, share, and protect your personal information, and the rights available to you.',
+        'Welcome to Aura. EchoAI Digital Limited ("we," "us," or "our") values your privacy. This Privacy Policy explains how we collect, use, store, share, and protect your personal information, and the rights available to you.',
         'This Policy applies to Aura websites, apps, and related services (collectively, the "Services"), for both registered and unregistered users.',
       ],
     },

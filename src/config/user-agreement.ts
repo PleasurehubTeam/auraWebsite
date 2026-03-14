@@ -13,7 +13,7 @@ export const userAgreementData: LegalPageData = {
       id: "introduction",
       title: "Introduction",
       content: [
-        'Welcome to Aura. This Aura User Agreement (the "Agreement") is entered into between you and EchoAI Digital Limited (回响智能科技有限公司) ("we," "us," or "our") regarding your use of Aura websites, apps, and related services (collectively, the "Services").',
+        'Welcome to Aura. This Aura User Agreement (the "Agreement") is entered into between you and EchoAI Digital Limited ("we," "us," or "our") regarding your use of Aura websites, apps, and related services (collectively, the "Services").',
         'By clicking "Agree," registering, signing in, or otherwise accessing or using the Services, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree, please stop using the Services immediately.',
       ],
     },
