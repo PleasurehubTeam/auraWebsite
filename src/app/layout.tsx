@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     template: "%s | Aura",
   },
   description: "AI-Powered Intelligent Sensory Technology Redefines Intimacy.",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
