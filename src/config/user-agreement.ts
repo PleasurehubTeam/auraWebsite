@@ -1,4 +1,5 @@
 import type { LegalPageData } from "@/types/legal";
+import { siteConfig } from "@/config/site";
 
 export const userAgreementData: LegalPageData = {
   metadata: {
@@ -41,7 +42,7 @@ export const userAgreementData: LegalPageData = {
         "3.1 You must provide true, accurate, and complete information and keep it updated.",
         "3.2 You are responsible for safeguarding your account credentials and verification codes, and for all activities under your account.",
         "3.3 Risks and losses caused by your failure to safeguard your account are your responsibility.",
-        "3.4 If you detect unauthorized use or account abnormalities, contact us promptly at support@realaura.ai.",
+        `3.4 If you detect unauthorized use or account abnormalities, contact us promptly at ${siteConfig.supportEmail}.`,
       ],
     },
     {
@@ -104,7 +105,7 @@ export const userAgreementData: LegalPageData = {
       content: [
         "10.1 We process personal information in accordance with the Aura Privacy Policy.",
         "10.2 By using the Services, you acknowledge and agree to the Aura Privacy Policy.",
-        "10.3 For privacy questions or rights requests, contact support@realaura.ai.",
+        `10.3 For privacy questions or rights requests, contact ${siteConfig.supportEmail}.`,
       ],
     },
     {
@@ -156,7 +157,7 @@ export const userAgreementData: LegalPageData = {
       title: "16. Contact",
       content: [
         "For any questions regarding this Agreement, contact:",
-        "support@realaura.ai",
+        siteConfig.supportEmail,
       ],
     },
   ],

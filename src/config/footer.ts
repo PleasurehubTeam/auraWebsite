@@ -1,4 +1,5 @@
 import type { FooterLinkGroup, SocialMediaLink } from "@/types";
+import { siteConfig } from "@/config/site";
 
 export const footerLinkGroups: FooterLinkGroup[] = [
   {
@@ -16,6 +17,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     links: [
       { label: "Frequently Questions", href: "/faq" },
       { label: "Contact Us", href: "/contact" },
+      { label: "Delete Account", href: "/delete-account" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "User Agreement", href: "/user-agreement" },
       { label: "Community Guidelines", href: "/community-guidelines" },
@@ -25,8 +27,8 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     title: "Contact",
     links: [
       {
-        label: "E-mail: support@realaura.ai",
-        href: "mailto:support@realaura.ai",
+        label: `E-mail: ${siteConfig.supportEmail}`,
+        href: `mailto:${siteConfig.supportEmail}`,
       },
       { label: "Online:", href: "#" },
     ],

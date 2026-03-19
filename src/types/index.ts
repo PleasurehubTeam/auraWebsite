@@ -1,3 +1,12 @@
+// Delete Account
+export type {
+  DeleteAccountConfig,
+  DeleteAccountPageMetadata,
+  DeleteAccountHero,
+  DeleteAccountSection,
+  DeleteAccountContact,
+} from "./delete-account";
+
 // Shared Legal Document Types
 export type {
   PolicyMetadata,
@@ -51,4 +60,5 @@ export interface SiteConfig {
   copyrightYearStart: number;
   ageVerificationRedirectUrl: string;
   privacyPolicyUrl: string;
+  supportEmail: string;
 }

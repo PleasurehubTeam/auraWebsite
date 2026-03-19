@@ -1,4 +1,5 @@
 import type { PrivacyPolicyData } from "@/types/privacy-policy";
+import { siteConfig } from "@/config/site";
 
 export const privacyPolicyData: PrivacyPolicyData = {
   metadata: {
@@ -98,14 +99,14 @@ export const privacyPolicyData: PrivacyPolicyData = {
       title: "9. Your Rights",
       content: [
         "Subject to applicable law, you may request access, correction, deletion, restriction, portability, objection, withdrawal of consent, and account closure.",
-        "Request channel: support@realaura.ai",
+        `Request channel: ${siteConfig.supportEmail}`,
       ],
     },
     {
       id: "california-notice",
       title: "10. California Notice (CCPA/CPRA)",
       content: [
-        "• We may collect categories of personal information, including sensitive personal information as defined by law.\n• Purposes include service delivery, security/risk control, improvement, support, and legal compliance.\n• We do not sell or share personal information for cross-context behavioral advertising.\n• California residents may exercise rights to know, access, correct, delete, data portability, and non-discrimination.\n• Request channel: support@realaura.ai",
+        `• We may collect categories of personal information, including sensitive personal information as defined by law.\n• Purposes include service delivery, security/risk control, improvement, support, and legal compliance.\n• We do not sell or share personal information for cross-context behavioral advertising.\n• California residents may exercise rights to know, access, correct, delete, data portability, and non-discrimination.\n• Request channel: ${siteConfig.supportEmail}`,
       ],
     },
     {
@@ -127,7 +128,7 @@ export const privacyPolicyData: PrivacyPolicyData = {
       title: "13. Updates and Contact",
       content: [
         "We may update this Policy from time to time. Material changes will be notified by in-app notice, email, or other reasonable means.",
-        "Contact: support@realaura.ai",
+        `Contact: ${siteConfig.supportEmail}`,
       ],
     },
   ],
