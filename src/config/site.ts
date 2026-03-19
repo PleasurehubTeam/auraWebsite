@@ -5,4 +5,5 @@ export const siteConfig: SiteConfig = {
   copyrightYearStart: 2025,
   ageVerificationRedirectUrl: "https://www.google.com",
   privacyPolicyUrl: "/privacy-policy",
+  supportEmail: "echoai@realaura.ai",
 };
