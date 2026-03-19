@@ -12,6 +12,7 @@ export interface DeleteAccountSection {
   id: string;
   title: string;
   content: string;
+  steps?: string[];
 }
 
 export interface DeleteAccountContact {

@@ -14,6 +14,17 @@ export const deleteAccountConfig: DeleteAccountConfig = {
   },
   sections: [
     {
+      id: "in-app-deletion",
+      title: "Delete Account In the App",
+      content:
+        "You can submit a deletion request directly within the Aura app by following these steps:",
+      steps: [
+        "Open the app and go to Profile",
+        "Tap Settings",
+        "Tap Delete Account and confirm",
+      ],
+    },
+    {
       id: "deletion-process",
       title: "How to Request Account Deletion",
       content:

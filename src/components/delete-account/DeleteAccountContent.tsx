@@ -24,6 +24,18 @@ export function DeleteAccountContent({ config }: DeleteAccountContentProps) {
             {section.title}
           </h2>
           <p className="leading-relaxed text-gray-600">{section.content}</p>
+          {section.steps && (
+            <ol className="mt-4 space-y-2">
+              {section.steps.map((step, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-900 text-xs font-semibold text-white">
+                    {index + 1}
+                  </span>
+                  <span className="text-gray-700">{step}</span>
+                </li>
+              ))}
+            </ol>
+          )}
         </section>
       ))}
 
