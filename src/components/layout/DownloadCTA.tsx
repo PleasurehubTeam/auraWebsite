@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { downloadConfig } from "@/config/download";
-import { StoreBadgeLink } from "@/components/icons/StoreBadges";
+import { AndroidBadgeLink } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
 
 export function DownloadCTA() {
@@ -42,7 +42,11 @@ export function DownloadCTA() {
             <span className="text-xl text-black">Aura</span>
           </div>
 
-          {/* 商店下载按钮暂时隐藏 */}
+          {/* 商店下载按钮 */}
+          <AndroidBadgeLink
+            href={downloadConfig.androidApkUrl}
+            className="h-[40px] sm:h-[55px] lg:h-[70px]"
+          />
         </div>
       </div>
     </section>

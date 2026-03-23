@@ -50,6 +50,7 @@ export interface SocialMediaLink {
 export interface DownloadConfig {
   appStoreUrl: string;
   googlePlayUrl: string;
+  androidApkUrl: string;
   heading: string;
   description: string;
 }

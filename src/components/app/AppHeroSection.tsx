@@ -2,7 +2,7 @@
 
 import type { AppHeroData } from "@/types/app";
 import { downloadConfig } from "@/config/download";
-import { StoreBadgeLink } from "@/components/icons/StoreBadges";
+import { AndroidBadgeLink } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
 import { MockupCarousel } from "./MockupCarousel";
 
@@ -20,13 +20,18 @@ export function AppHeroSection({ data }: AppHeroSectionProps) {
       </div>
 
       {/* 标题 + 下载按钮 */}
-      {/* <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-center text-2xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
           {data.title}
         </h1>
 
-        下载按钮暂时隐藏
-      </div> */}
+        <div className="mt-8 flex justify-center">
+          <AndroidBadgeLink
+            href={downloadConfig.androidApkUrl}
+            className="h-[40px] sm:h-[55px] lg:h-[70px]"
+          />
+        </div>
+      </div>
     </section>
   );
 }

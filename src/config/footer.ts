@@ -6,7 +6,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      // { label: "Download APP", href: "/download" }, // 暂时隐藏
+      { label: "Download APP", href: "/app" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "User Agreement", href: "/user-agreement" },
       { label: "Community Guidelines", href: "/community-guidelines" },

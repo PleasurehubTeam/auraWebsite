@@ -2,41 +2,48 @@
 
 import { motion } from "framer-motion";
 
-// Next.js serves public/ at root, so no "/public" prefix
-const SPRITE_PATH = "/images/home/aura-index-icon-01.svg";
-
 /**
- * Sprite: viewBox 0 0 461.53 70.26
+ * Sprite: download-buttons.svg (viewBox 0 0 666.67 666.67)
  *
- * App Store  badge: x 0      → 214.81  (width 214.81)
- * Gap:              x 214.81 → 246.74
- * Google Play badge: x 246.74 → 461.53  (width 214.79)
+ * 2×3 grid layout, each button ≈ 292.36 × 91.36 (viewBox units):
+ *   internal path size: 219.272 × 68.522, aspect ratio 3.2:1
  *
- * backgroundSize  = (spriteWidth / badgeWidth) × 100%
- *   App Store   → 461.53 / 214.81 ≈ 214.86%
- *   Google Play → 461.53 / 214.79 ≈ 214.88%
+ *   Row 1 (top):  Android APK  |  Huawei AppGallery
+ *   Row 2 (mid):  App Store    |  Galaxy Store
+ *   Row 3 (bot):  Google Play  |  (empty)
  *
- * backgroundPosition (percentage formula):
- *   App Store   → 0%   (left edge)
- *   Google Play → 100% (right edge)
+ * backgroundSize  = (spriteW / btnW) × 100%  ≈ 228.03%
+ *                   (spriteH / btnH) × 100%  ≈ 729.70%
+ *
+ * backgroundPosition (percentage):
+ *   Android APK  → 8.91%  30.58%
+ *   App Store    → 8.91%  49.95%
+ *   Google Play  → 8.91%  69.33%
  */
+const SPRITE_PATH = "/images/home/download-buttons.svg";
+
 const spriteConfig = {
+  androidApk: {
+    backgroundPosition: "8.91% 30.58%",
+    label: "Download APK 6.0+ Android",
+  },
   appStore: {
-    backgroundSize: "214.86% 100%",
-    backgroundPosition: "0 0",
-    aspectRatio: "214.81 / 70.26",
+    backgroundPosition: "8.91% 49.95%",
     label: "Download on App Store",
   },
   googlePlay: {
-    backgroundSize: "214.88% 100%",
-    backgroundPosition: "100% 0",
-    aspectRatio: "214.79 / 70.26",
+    backgroundPosition: "8.91% 69.33%",
     label: "Get it on Google Play",
   },
 } as const;
 
+const BACKGROUND_SIZE = "228.03% 729.70%";
+const ASPECT_RATIO = "219.272 / 68.522";
+
+type BadgeType = keyof typeof spriteConfig;
+
 interface StoreBadgeLinkProps {
-  type: "appStore" | "googlePlay";
+  type: BadgeType;
   href: string;
   className?: string;
 }
@@ -56,9 +63,9 @@ export function StoreBadgeLink({
       className={className}
       style={{
         display: "block",
-        aspectRatio: cfg.aspectRatio,
+        aspectRatio: ASPECT_RATIO,
         backgroundImage: `url(${SPRITE_PATH})`,
-        backgroundSize: cfg.backgroundSize,
+        backgroundSize: BACKGROUND_SIZE,
         backgroundPosition: cfg.backgroundPosition,
         backgroundRepeat: "no-repeat",
       }}
@@ -67,4 +74,12 @@ export function StoreBadgeLink({
       aria-label={cfg.label}
     />
   );
+}
+
+// Convenience alias for Android APK button
+export function AndroidBadgeLink({
+  href,
+  className = "h-12",
+}: Omit<StoreBadgeLinkProps, "type">) {
+  return <StoreBadgeLink type="androidApk" href={href} className={className} />;
 }

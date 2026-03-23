@@ -5,7 +5,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import type { HeroSlide } from "@/types/home";
 import { downloadConfig } from "@/config/download";
-import { StoreBadgeLink } from "@/components/icons/StoreBadges";
+import { AndroidBadgeLink } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
 import { useImagePreload } from "@/hooks/useImagePreload";
 
@@ -89,7 +89,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
                 </h1>
               </div>
 
-              {/* 移动端：首屏显示副标题，非首屏显示等高占位块 */}
+              {/* 移动端：首屏显示下载按钮，非首屏显示等高占位块 */}
               {activeIndex === 0 ? (
                 <div className="relative z-[2] w-full pt-[400px] sm:hidden sm:pt-0">
                   {activeSlide.subtitle && (
@@ -97,6 +97,12 @@ export function HeroSection({ slides }: HeroSectionProps) {
                       {activeSlide.subtitle}
                     </p>
                   )}
+                  <div className="flex w-full justify-center">
+                    <AndroidBadgeLink
+                      href={downloadConfig.androidApkUrl}
+                      className="h-[55px]"
+                    />
+                  </div>
                 </div>
               ) : (
                 <div className="w-full pt-[496px] sm:hidden sm:pt-0" />
@@ -118,7 +124,7 @@ export function HeroSection({ slides }: HeroSectionProps) {
         </AnimatePresence>
       </div>
 
-      {/* 副标题 - 右下角，仅第一张幻灯片显示 */}
+      {/* 下载按钮 - 右下角，仅第一张幻灯片显示 */}
       <AnimatePresence>
         {activeIndex === 0 && (
           <motion.div
@@ -135,6 +141,10 @@ export function HeroSection({ slides }: HeroSectionProps) {
                     {activeSlide.subtitle}
                   </p>
                 )}
+                <AndroidBadgeLink
+                  href={downloadConfig.androidApkUrl}
+                  className="h-[40px] sm:h-[55px] lg:h-[70px]"
+                />
               </div>
             </div>
           </motion.div>

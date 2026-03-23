@@ -3,7 +3,7 @@
 import Image from "next/image";
 import type { AppBottomCTAData } from "@/types/app";
 import { downloadConfig } from "@/config/download";
-import { StoreBadgeLink } from "@/components/icons/StoreBadges";
+import { AndroidBadgeLink } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
 
 interface AppBottomCTAProps {
@@ -36,7 +36,12 @@ export function AppBottomCTA({ data }: AppBottomCTAProps) {
           {data.description}
         </p>
 
-        {/* 下载按钮暂时隐藏 */}
+        <div className="mt-8 flex justify-center">
+          <AndroidBadgeLink
+            href={downloadConfig.androidApkUrl}
+            className="h-[40px] sm:h-[55px] lg:h-[70px]"
+          />
+        </div>
       </div>
     </section>
   );
