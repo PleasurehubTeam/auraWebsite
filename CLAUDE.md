@@ -4,6 +4,9 @@ Auto-generated from all feature plans. Last updated: 2026-02-26
 
 ## Active Technologies
 
+- TypeScript 5.5+ (strict mode) + Next.js 16.1 (App Router), React 19.2, Tailwind CSS 3.4, Framer Motion 11.0 (001-delete-account)
+- N/A（纯静态页面，数据来源为本地 TypeScript 配置文件） (001-delete-account)
+
 - TypeScript 5.5+ (strict mode) + Next.js 14+ (App Router), React 18+, Tailwind CSS 3.4+ (010-user-agreement-page)
 - 本地 TypeScript 配置文件（`src/config/`） (010-user-agreement-page)
 
@@ -41,11 +44,11 @@ tests/
 
 ## Recent Changes
 
+- 001-delete-account: Added TypeScript 5.5+ (strict mode) + Next.js 16.1 (App Router), React 19.2, Tailwind CSS 3.4, Framer Motion 11.0
+
 - 010-user-agreement-page: Added TypeScript 5.5+ (strict mode) + Next.js 14+ (App Router), React 18+, Tailwind CSS 3.4+
 
 - 009-privacy-policy-page: Added TypeScript 5.5+ (strict mode) + Next.js 16.1 (App Router), React 19.2, Tailwind CSS 3.4 (+ @tailwindcss/typography), Framer Motion 11.0
-
-- 007-explore-community-page: Added TypeScript 5.5+ (strict mode) + Next.js 14.2+ (App Router), React 18.3+, Tailwind CSS 3.4+, Framer Motion 11.0+
 
 <!-- MANUAL ADDITIONS START -->
 <!-- MANUAL ADDITIONS END -->
