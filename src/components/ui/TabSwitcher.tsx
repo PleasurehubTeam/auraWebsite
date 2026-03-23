@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import type { TabItem } from "@/types/home";
@@ -14,10 +14,12 @@ interface TabSwitcherProps {
 }
 
 export function TabSwitcher({ tabs, className = "" }: TabSwitcherProps) {
-  const instanceId = useId();
   const [activeIndex, setActiveIndex] = useState(0);
   const activeTab = tabs[activeIndex];
   const [failedSrcs, setFailedSrcs] = useState<Set<string>>(new Set());
+
+  const tabListRef = useRef<HTMLDivElement>(null);
+  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
 
   // Preload all tab images so switching tabs is instant
   const allTabImages = useMemo(
@@ -28,6 +30,22 @@ export function TabSwitcher({ tabs, className = "" }: TabSwitcherProps) {
     [tabs],
   );
   useImagePreload(allTabImages);
+
+  // 计算指示器位置
+  useEffect(() => {
+    const tabList = tabListRef.current;
+    if (!tabList) return;
+    const buttons = tabList.querySelectorAll<HTMLButtonElement>('[role="tab"]');
+    const activeButton = buttons[activeIndex];
+    if (!activeButton) return;
+
+    const listRect = tabList.getBoundingClientRect();
+    const btnRect = activeButton.getBoundingClientRect();
+    setIndicatorStyle({
+      left: btnRect.left - listRect.left,
+      width: btnRect.width,
+    });
+  }, [activeIndex]);
 
   const getImgSrc = (original: string) =>
     failedSrcs.has(original) ? PLACEHOLDER_IMAGE : original;
@@ -41,7 +59,11 @@ export function TabSwitcher({ tabs, className = "" }: TabSwitcherProps) {
       {/* 标签栏 */}
       <div className="relative mx-auto mb-8 w-full max-w-7xl">
         {/* 标签按钮 */}
-        <div className="flex justify-center gap-2" role="tablist">
+        <div
+          ref={tabListRef}
+          className="relative flex justify-center gap-2"
+          role="tablist"
+        >
           {tabs.map((tab, index) => (
             <button
               key={tab.id}
@@ -54,17 +76,15 @@ export function TabSwitcher({ tabs, className = "" }: TabSwitcherProps) {
                 color: index === activeIndex ? "#000000" : "#999999",
               }}
             >
-              {/* 滑动指示器 - 底部横条 */}
-              {index === activeIndex && (
-                <motion.div
-                  layoutId={`tab-indicator-${instanceId}`}
-                  className="absolute bottom-0 left-0 right-0 z-10 h-0.5 bg-brand-pink"
-                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                />
-              )}
               {tab.label}
             </button>
           ))}
+          {/* 滑动指示器 - 移到按钮外部，不受 Google Translate DOM 修改影响 */}
+          <motion.div
+            className="absolute bottom-0 z-10 h-0.5 bg-brand-pink"
+            animate={{ left: indicatorStyle.left, width: indicatorStyle.width }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          />
         </div>
         {/* 滚动槽 - 与指示器等高的底部横条 */}
         <div
