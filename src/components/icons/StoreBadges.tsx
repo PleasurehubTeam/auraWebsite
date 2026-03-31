@@ -83,3 +83,11 @@ export function AndroidBadgeLink({
 }: Omit<StoreBadgeLinkProps, "type">) {
   return <StoreBadgeLink type="androidApk" href={href} className={className} />;
 }
+
+// Convenience alias for Google Play button
+export function GooglePlayBadgeLink({
+  href,
+  className = "h-12",
+}: Omit<StoreBadgeLinkProps, "type">) {
+  return <StoreBadgeLink type="googlePlay" href={href} className={className} />;
+}

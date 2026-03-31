@@ -2,7 +2,10 @@
 
 import Image from "next/image";
 import { downloadConfig } from "@/config/download";
-import { AndroidBadgeLink } from "@/components/icons/StoreBadges";
+import {
+  AndroidBadgeLink,
+  GooglePlayBadgeLink,
+} from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
 
 export function DownloadCTA() {
@@ -43,10 +46,16 @@ export function DownloadCTA() {
           </div>
 
           {/* 商店下载按钮 */}
-          <AndroidBadgeLink
-            href={downloadConfig.androidApkUrl}
-            className="h-[40px] sm:h-[55px] lg:h-[70px]"
-          />
+          <div className="flex gap-3">
+            <AndroidBadgeLink
+              href={downloadConfig.androidApkUrl}
+              className="h-[40px] sm:h-[55px] lg:h-[70px]"
+            />
+            <GooglePlayBadgeLink
+              href={downloadConfig.googlePlayUrl}
+              className="h-[40px] sm:h-[55px] lg:h-[70px]"
+            />
+          </div>
         </div>
       </div>
     </section>
