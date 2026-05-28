@@ -7,6 +7,7 @@ import type { HeroSlide } from "@/types/home";
 import { downloadConfig } from "@/config/download";
 import {
   AndroidBadgeLink,
+  AppStoreBadgeLink,
   GooglePlayBadgeLink,
 } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
@@ -101,6 +102,10 @@ export function HeroSection({ slides }: HeroSectionProps) {
                     </p>
                   )}
                   <div className="flex w-full justify-center gap-3">
+                    <AppStoreBadgeLink
+                      href={downloadConfig.appStoreUrl}
+                      className="h-[55px]"
+                    />
                     <AndroidBadgeLink
                       href={downloadConfig.androidApkUrl}
                       className="h-[55px]"
@@ -149,6 +154,10 @@ export function HeroSection({ slides }: HeroSectionProps) {
                   </p>
                 )}
                 <div className="flex gap-3">
+                  <AppStoreBadgeLink
+                    href={downloadConfig.appStoreUrl}
+                    className="h-[40px] sm:h-[55px] lg:h-[70px]"
+                  />
                   <AndroidBadgeLink
                     href={downloadConfig.androidApkUrl}
                     className="h-[40px] sm:h-[55px] lg:h-[70px]"

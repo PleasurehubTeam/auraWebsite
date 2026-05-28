@@ -84,6 +84,14 @@ export function AndroidBadgeLink({
   return <StoreBadgeLink type="androidApk" href={href} className={className} />;
 }
 
+// Convenience alias for App Store button
+export function AppStoreBadgeLink({
+  href,
+  className = "h-12",
+}: Omit<StoreBadgeLinkProps, "type">) {
+  return <StoreBadgeLink type="appStore" href={href} className={className} />;
+}
+
 // Convenience alias for Google Play button
 export function GooglePlayBadgeLink({
   href,

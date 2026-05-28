@@ -4,6 +4,7 @@ import Image from "next/image";
 import { downloadConfig } from "@/config/download";
 import {
   AndroidBadgeLink,
+  AppStoreBadgeLink,
   GooglePlayBadgeLink,
 } from "@/components/icons/StoreBadges";
 import { GradientBackground } from "@/components/ui/GradientBackground";
@@ -47,6 +48,10 @@ export function DownloadCTA() {
 
           {/* 商店下载按钮 */}
           <div className="flex gap-3">
+            <AppStoreBadgeLink
+              href={downloadConfig.appStoreUrl}
+              className="h-[40px] sm:h-[55px] lg:h-[70px]"
+            />
             <AndroidBadgeLink
               href={downloadConfig.androidApkUrl}
               className="h-[40px] sm:h-[55px] lg:h-[70px]"

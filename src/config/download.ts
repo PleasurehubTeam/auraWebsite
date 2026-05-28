@@ -2,7 +2,7 @@ import type { DownloadConfig } from "@/types";
 
 export const downloadConfig: DownloadConfig = {
   appStoreUrl:
-    "https://apps.apple.com/us/app/pleasurehub-your-ai-companion/id6752891227",
+    "https://apps.apple.com/us/app/ecroslink-smart-control-to-log/id6771246802",
   googlePlayUrl:
     "https://play.google.com/store/apps/details?id=com.echoai.aura.app&pcampaignid=web_share",
   androidApkUrl:
